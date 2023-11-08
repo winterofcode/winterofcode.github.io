@@ -1,5 +1,7 @@
 import React from "react";
 import "./Apply.scss";
+import { Button, Flex } from 'antd';
+
 
 const Apply = () => {
 <<<<<<< HEAD
@@ -16,6 +18,12 @@ const Apply = () => {
           <br />
           Check the Timeline section .Applications will open on the mentioned date.
         </div>
+        <Flex gap="small" wrap="wrap">
+          <Button type="primary" className="primary">Apply As Organisation</Button>
+          <Button type="primary" className="primary">Apply As Community Partner</Button>
+          <Button type="primary" className="primary">Apply As Mentor</Button>
+          <Button type="primary" className="primary">Apply As Student</Button>
+        </Flex>
       </div>
     </>
     )
