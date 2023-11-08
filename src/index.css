@@ -9,3 +9,16 @@ body {
 * {
   font-family: "Inter var", sans-serif !important;
 }
+
+.primary {
+  background-color: #2860c7;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+
+  &:hover {
+    background-color: #3474eb;
+    color: white !important;
+  }
+}
