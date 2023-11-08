@@ -1,0 +1,11 @@
+html,
+body {
+  box-sizing: border-box;
+  height: 100vh;
+  background: linear-gradient(180deg, #0e1742 0%, #2860c7 79.69%);
+  color: white;
+}
+
+* {
+  font-family: "Inter var", sans-serif !important;
+}
