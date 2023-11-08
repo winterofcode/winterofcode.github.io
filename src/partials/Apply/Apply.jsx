@@ -1,10 +1,15 @@
 import React from "react";
 import "./Apply.scss";
-import { Button, Flex } from 'antd';
+import { Button, Flex, Segmented } from 'antd';
 
+const boxStyle = {
+  width: '100%',
+  height: 120,
+};
 
 const Apply = () => {
   return (
+    
     <>
       <div className="box">
         <div className="heading">
@@ -15,11 +20,13 @@ const Apply = () => {
           <br />
           Check the Timeline section .Applications will open on the mentioned date.
         </div>
-        <Flex gap="small" wrap="wrap">
+        <Flex gap="small" align="start" wrap="wrap">
+        <Flex style={boxStyle} justify='space-around' align='center'>
           <Button type="primary" className="primary">Apply As Organisation</Button>
           <Button type="primary" className="primary">Apply As Community Partner</Button>
           <Button type="primary" className="primary">Apply As Mentor</Button>
           <Button type="primary" className="primary">Apply As Student</Button>
+        </Flex>
         </Flex>
       </div>
     </>
