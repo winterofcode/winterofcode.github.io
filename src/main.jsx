@@ -29,9 +29,9 @@ const router = createBrowserRouter(routes);
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <App>
-      <Navbar />
+      {/* <Navbar /> */}
       <RouterProvider router={router} />
-      <Footer />
+      {/* <Footer /> */}
     </App>
   </React.StrictMode>
 );
