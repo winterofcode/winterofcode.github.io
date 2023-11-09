@@ -23,8 +23,8 @@ const Apply = () => {
           <br />
           Check the Timeline section .Applications will open on the mentioned date.
         </div>
-        <Flex gap="small" align="start" wrap="wrap">
-        <Flex style={boxStyle} justify='space-around' align='center'>
+        <Flex gap="middle" align="start">
+        <Flex style={boxStyle} justify='space-around' align='center' wrap="wrap" className="ApplyButtons">
           <Button type="primary" className="primary">Apply As Organisation</Button>
           <Button type="primary" className="primary">Apply As Community Partner</Button>
           <Button type="primary" className="primary">Apply As Mentor</Button>

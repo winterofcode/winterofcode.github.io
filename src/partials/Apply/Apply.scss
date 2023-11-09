@@ -10,6 +10,8 @@
     flex-shrink: 0;
     background: linear-gradient(180deg, rgba(15, 24, 66, 0.28) 14.5%, rgba(160, 238, 255, 0.40) 83.1%);
     color: white;
+    box-sizing: border-box;
+    
 }
 .heading{
     color: #FFFCFC;
@@ -31,4 +33,9 @@
     line-height: normal;
     padding-top: 82px;
     flex-wrap: wrap;
+}
+.ApplyButton{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
 }
