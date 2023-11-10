@@ -8,7 +8,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { timelineData } from "constants/timelineData";
-
+import { AiFillCaretDown } from "react-icons/ai";
 const Timeline = () => {
   return (
     <div className="timeline">
@@ -40,6 +40,7 @@ const Timeline = () => {
         ))}
       </VerticalTimeline>
       <div className="complete">
+        <AiFillCaretDown size="35px" />
         <h3>Completion of WOC 2024</h3>
       </div>
     </div>
