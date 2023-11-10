@@ -1,0 +1,24 @@
+html,
+body {
+  box-sizing: border-box;
+  height: 100vh;
+  background: linear-gradient(180deg, #0e1742 0%, #2860c7 79.69%);
+  color: white;
+}
+
+* {
+  font-family: "Inter var", sans-serif !important;
+}
+
+.primary {
+  background-color: #2860c7;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+
+  &:hover {
+    background-color: #3474eb;
+    color: white !important;
+  }
+}
