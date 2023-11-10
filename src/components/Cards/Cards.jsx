@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card,Row,Col } from 'antd';
+import { Card,Row,Col,Flex,Button,Space } from 'antd';
 // import woc from 'woc.png';
 const Cards = () => {
   return (
@@ -20,7 +20,11 @@ const Cards = () => {
               // backgroundColor: 'rgba(211,211,211,0.5),'
             }}
         >
-          
+          <div className="space-align-block">
+            <Space align="baseline">
+              <Button className='primary'>View Projects</Button>
+            </Space>
+          </div>
         </Card>
       </Col>
   </Row>
