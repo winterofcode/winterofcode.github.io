@@ -1,34 +1,34 @@
-import React,{useEffect,useState} from "react";
-import "./FAQ.scss";
-import faq from "./faq";
-import { CaretRightOutlined } from '@ant-design/icons';
+import React, { useEffect, useState } from "react";
+import styles from "./FAQ.scss";
+
+import { CaretRightOutlined } from "@ant-design/icons";
 import { Collapse, Space } from "antd";
 import { theme, ConfigProvider } from "antd";
-console.log(faq);
+import faqData from "constants/faqData";
+
 const FAQ = () => {
   const { token } = theme.useToken();
   const [isSmallScreen, setIsSmallScreen] = useState(false);
   useEffect(() => {
-    
     const handleResize = () => {
-      setIsSmallScreen(window.innerWidth < 640); 
+      setIsSmallScreen(window.innerWidth < 640);
     };
     handleResize();
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
   return (
     <div className="faq">
-      <h1 className="head-faq">FAQs</h1>
+      <h1 className={styles.head_faq}>FAQs</h1>
       <ConfigProvider
         theme={{
           token: {
             Collapse: {
               headerPadding: "5px 10px",
               contentPadding: "2px 10px ",
-              fontSize: isSmallScreen ? "10px" : "15px" // fixed syntax error
+              fontSize: isSmallScreen ? "10px" : "15px", // fixed syntax error
             },
             Input: {
               colorPrimary: "#eb2f96",
@@ -36,13 +36,18 @@ const FAQ = () => {
             },
           },
         }}
-      >
-        {faq.map((item, index) => {
+      > 
+        {faqData.map((item, index) => {
           return (
-            <Collapse
-            expandIcon={({ isActive }) => <CaretRightOutlined style={{
-              padding: "7px 2px",
-            }} rotate={isActive ? 90 : 0} />}
+            <Collapse className={styles.accordion_collapse} 
+              expandIcon={({ isActive }) => (
+                <CaretRightOutlined
+                  style={{
+                    padding: "7px 2px",
+                  }}
+                  rotate={isActive ? 90 : 0}
+                />
+              )}
               key={index}
               accordion={true}
               style={{
@@ -50,13 +55,9 @@ const FAQ = () => {
                 marginBottom: "20px",
               }}
             >
-              <Collapse.Panel
-                header={<div>{item.label}</div>}
-                key={item.key}
-               
-              >
+              <Collapse.Panel header={item.label} key={item.key}>
                 <p
-                  className="accordion-text"
+                  className={styles.accordion_text}
                   style={{
                     padding: "0px",
                   }}
@@ -67,7 +68,7 @@ const FAQ = () => {
             </Collapse>
           );
         })}
-      </ConfigProvider>
+       </ConfigProvider> 
     </div>
   );
 };

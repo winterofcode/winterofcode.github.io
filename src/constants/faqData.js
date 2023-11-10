@@ -1,4 +1,5 @@
-const faq = [
+
+const faqData = [
     {
         key: '1',
         label: 'When can students apply for Winter of Code?',
@@ -44,4 +45,4 @@ const faq = [
         children: `Feel free to mail us at lead@dscnsec.com`,
     },
 ];
-export default faq;
+export default faqData;
