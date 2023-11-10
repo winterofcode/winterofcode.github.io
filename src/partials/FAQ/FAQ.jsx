@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+// @ts-ignore
 import styles from "./FAQ.scss";
 
 import { CaretRightOutlined } from "@ant-design/icons";
@@ -21,18 +22,19 @@ const FAQ = () => {
   }, []);
   return (
     <div className="faq">
-      <h1 className={styles.head_faq}>FAQs</h1>
+      <h1 className="head_faq">FAQs</h1>
       <ConfigProvider
         theme={{
           token: {
+            // @ts-ignore
             Collapse: {
               headerPadding: "5px 10px",
               contentPadding: "2px 10px ",
-              fontSize: isSmallScreen ? "10px" : "15px", // fixed syntax error
+              fontSize: isSmallScreen ? "10px" : "16px", // fixed syntax error
             },
             Input: {
               colorPrimary: "#eb2f96",
-              algorithm: true, // Enable algorithm
+              algorithm: true, 
             },
           },
         }}
@@ -60,6 +62,7 @@ const FAQ = () => {
                   className={styles.accordion_text}
                   style={{
                     padding: "0px",
+                    
                   }}
                 >
                   {item.children}
