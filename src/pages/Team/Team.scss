@@ -1,0 +1,157 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.teams-container{
+
+    background: #020248 !important;
+    overflow: hidden !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden !important;
+    .heading{
+     color: aliceblue;
+     text-align: center;
+     position: relative;
+     z-index: 1;
+    }
+    .custom-grid-container {
+    display: grid;
+     grid-template-columns: 1;
+     gap: 20px;
+    }
+}
+
+.card-container {
+  display: flex ;
+  flex-direction: row;
+  justify-content: space-around;
+  margin:40px 10px 20px; 
+  border: solid ;
+  box-shadow: dimgrey;
+  padding: 0;
+  width: 100%;
+  background:linear-gradient(70deg, #08989d 0%, #b7d8d9 79.69%); //#055f62
+ 
+
+  .team-member-image {
+    display: block;
+    border-radius: 50%; 
+    padding: 20px; 
+    width: 200px;
+    height: 200px;
+  }
+ 
+}
+
+.container{
+  position: fixed;
+  width: 5000px;
+  height: 100%;
+  overflow: hidden;
+  /* z-index: -1; */
+}
+
+.bubbles{
+  position: relative;
+  display: flex;
+}
+
+.bubbles span{
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background: #83e3f8;
+  margin: 0 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #3695ab44,
+  0 0 50px #57cbe5,
+  0 0 100px #81e1f6;
+  animation: animate 15s linear infinite;
+  animation-duration: calc(125s / var(--i));
+}
+
+.bubbles span:nth-child(even){
+  background: rgba(239, 238, 229, 0.855);
+  box-shadow: 0 0 0 10px #efe68544,
+  0 0 50px #e7f366,
+  0 0 100px #f1ed7f;
+  z-index: -1;
+}
+
+@keyframes animate
+{
+  0%
+  {
+      transform: translateY(100vh) scale(0);
+  }
+  100%
+  {
+      transform: translateY(-10vh) scale(1);
+  }
+}
+
+
+
+.floating { 
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 15px); }
+  100%   { transform: translate(0, -0px); }   
+}
+
+
+.ant-row{
+  display: flex;
+  flex-direction: row;
+  @media screen and (max-width:600px) {
+  
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+}
+@media screen and (max-width:600px) {
+  
+  .ant-row{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ant-text{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and  (max-width>600px) and (max-width<780px){
+ .card-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 500px;
+  max-width:50px
+ }
+ .ant-row{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+.ant-text{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+}
+
+
