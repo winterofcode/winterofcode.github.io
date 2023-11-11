@@ -1,0 +1,61 @@
+// Build.scss
+
+.build-container {
+    background-color: #012325;
+    color: white;
+}
+
+.content-container {
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    text-align: justify;
+    color: #f3e79d;
+    background-color: #f3e79d;
+
+    .title {
+        font-size: 3xl;
+        font-weight: 600;
+        color: black;
+    }
+
+    .description {
+        font-size: 20px;
+    }
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #f3e79d;
+
+    @media (min-width: 48em) {
+        flex-direction: row;
+    }
+}
+
+.card {
+    // max-width: 300px;
+    padding: 7px;
+    // margin: 7px;
+    margin-top: 0;
+    text-align: justify;
+    background-color: #f3e79d;
+
+    .card-header {
+        h2 {
+            font-size: 3xl;
+            font-weight: bold;
+            color: black;
+        }
+    }
+
+    .card-image {
+        margin: auto;
+    }
+
+    .card-description {
+        font-size: 16px;
+        color: black;
+    }
+}
