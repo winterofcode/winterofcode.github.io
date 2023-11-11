@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="main-container">
       <h1 className="header">About The Program</h1>
-
+      <br/>
       <p className="description">
         Winter of Code is a program aimed to increase participation for the
         Google Summer of Code program among students in colleges and
