@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./Statistics.scss";
-import { FiUser } from "react-icons/fi";
-import { ImUserTie } from "react-icons/im";
-import { VscOrganization } from "react-icons/vsc";
+
+import { PiUser } from 'react-icons/pi';
+import { PiBuildings } from 'react-icons/pi';
+import{HiOutlineUserGroup} from 'react-icons/hi'
+
 
 const AnimatedNumber = ({ value, duration = 2000, showPlus = true }) => {
   const [count, setCount] = useState(0);
@@ -30,7 +32,7 @@ const AnimatedNumber = ({ value, duration = 2000, showPlus = true }) => {
   }, [value, duration]);
 
   return (
-    <strong className="stat-number">
+    <strong className="stat-number" >
       {count}
       {showPlus && "+"}
     </strong>
@@ -41,19 +43,19 @@ const Statistics = () => {
   return (
     <div className="statistics-container">
       <div className="statistics-box">
-        <FiUser size={"70px"} />
+        <PiUser className="user-icon" size={"70px"} />
         <br />
         <AnimatedNumber value={400} showPlus />
         <span className="stat-label">Students</span>
       </div>
       <div className="statistics-box">
-        <VscOrganization size={"70px"} />
+        <PiBuildings className="pi-buildings-icon" size={"70px"} />
         <br />
         <AnimatedNumber value={10} showPlus />
         <span className="stat-label">Organisations</span>
       </div>
       <div className="statistics-box">
-        <ImUserTie size={"70px"} />
+        <HiOutlineUserGroup className="mentor-icon" size={"70px"} />
         <br />
         <AnimatedNumber value={40} showPlus />
         <span className="stat-label">Mentors</span>
