@@ -1,25 +1,7 @@
 
-import React from 'react'
-import { data } from './components/team-data';
-import { Row, Col, Card, Flex, Typography } from 'antd';
-const { Title } = Typography;
-import "./Team.scss"
-
-
-const Team = () => {
-  return (
-    <>
-      <div className='teams-container'>
-        <Bg />
-        <Title className='heading'>Our Team</Title>
-        <div style={{ width: '95%', maxWidth: '1000px', margin: '0 auto' }} className='custom-grid-container'>
-          <Cards />
-        </div>
-      </div>
-    </>
-  )
-}
-
+import React from 'react';
+import './Team.scss';
+import { teamData } from 'constants/teamData';
 
 const Bg = () => {
   return (
@@ -301,65 +283,53 @@ const Bg = () => {
     </div>
   )
 }
-const Cards = () => {
 
-  return (
-    <div >
-      <Row gutter={16}>
-        {data.map((item, index) => (
-          <Col xs={24} sm={12} key={index}>
-            <div className='floating'>
-              <Card className='card-container'
-                bodyStyle={{
-                  padding: 0,
-                  overflow: 'hidden',
+const SocialMediaLinks = ({ socials }) => (
+  <div className="social-media-links">
+    {socials.map((item, index) => (
+      <div key={index} className="social-media-link">
+        <a href={item.url} target="_blank" rel="noopener noreferrer">
+         <img src={item.icon}/>
+        </a>
+        <p>{item.name}</p>
+      </div>
+    ))}
+  </div>
+);
 
-                }}
-              >
-                <Flex className='ant-row' gap={10}>
-                  <Flex justify='space-around'>
-                    <img
-                      alt="avatar"
-                      src={item.img}
-                      className='team-member-image'
-                    />
-
-                  </Flex>
-                  <Flex vertical
-                    align='flex-end'
-                    style={{
-                      padding: 32,
-                    }}
-                    className='ant-text'
-                  >
-
-                    <Typography.Title level={3}>
-                      {item.name}
-                    </Typography.Title>
-                    <Typography.Title level={5}>
-                      {item.desg}
-                    </Typography.Title>
-                    <Typography.Title level={5}>
-                      {item.desg}
-                    </Typography.Title>
-
-                  </Flex>
-                </Flex>
-              </Card>
-            </div>
-          </Col>
-        ))}
-      </Row>
+const Card = ({ image, name,title, socials }) => (
+  <div className="card">
+    <div className="card-content">
+      <img src={image} alt={name} className="avatar" />
+       <div className="info">
+        <h3 >{name}</h3>
+        <h4 style={{color:"#ffffffef",fontSize:"20px"}}>{title}</h4>
+        <SocialMediaLinks socials={socials} />
+       
+      </div>
     </div>
-  )
-};
+  </div>
+);
+
+const CardContainer = ({ teamData }) => (
+  <div className='floating'>
+  <div className="card-container">
+    {teamData.map((card, index) => (
+      <Card key={index} {...card} />
+    ))}
+  </div>
+  </div>
+);
 
 
 
+const Team = () => (
+  <div className="team">
+    <Bg/>
+    <h1 className='heading'>Our Team</h1>
+    <CardContainer teamData={teamData} />
+  </div>
+);
 
-
-
-
-
-export default Team
+export default Team;
 
