@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./Statistics.scss";
 
-import { PiUser } from 'react-icons/pi';
-import { PiBuildings } from 'react-icons/pi';
-import{HiOutlineUserGroup} from 'react-icons/hi'
-
+import { PiUser } from "react-icons/pi";
+import { PiBuildings } from "react-icons/pi";
+import { HiOutlineUserGroup } from "react-icons/hi";
 
 const AnimatedNumber = ({ value, duration = 2000, showPlus = true }) => {
   const [count, setCount] = useState(0);
@@ -32,7 +31,7 @@ const AnimatedNumber = ({ value, duration = 2000, showPlus = true }) => {
   }, [value, duration]);
 
   return (
-    <strong className="stat-number" >
+    <strong className="stat-number">
       {count}
       {showPlus && "+"}
     </strong>
