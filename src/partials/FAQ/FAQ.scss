@@ -2,7 +2,7 @@
     max-width: 560px;
     padding: 36px;
     width: calc(100vw - 72px);
-    margin: auto;
+    margin: 20px auto;
     box-sizing: border-box; /* Include padding and borders in the total width and height */
   
     @media screen and (max-width: 768px) {
@@ -17,6 +17,7 @@
 .head_faq {
   color: white;
   text-align: center;
+  margin-bottom: 16px;
 }
 .accordion_header {
   padding: 0 !important;

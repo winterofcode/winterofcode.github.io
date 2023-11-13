@@ -42,19 +42,19 @@ const Statistics = () => {
   return (
     <div className="statistics-container">
       <div className="statistics-box">
-        <PiUser className="user-icon" size={"70px"} />
+        <PiUser className="user-icon" size={"36px"} />
         <br />
         <AnimatedNumber value={400} showPlus />
         <span className="stat-label">Students</span>
       </div>
       <div className="statistics-box">
-        <PiBuildings className="pi-buildings-icon" size={"70px"} />
+        <PiBuildings className="pi-buildings-icon" size={"36px"} />
         <br />
         <AnimatedNumber value={10} showPlus />
         <span className="stat-label">Organisations</span>
       </div>
       <div className="statistics-box">
-        <HiOutlineUserGroup className="mentor-icon" size={"70px"} />
+        <HiOutlineUserGroup className="mentor-icon" size={"36px"} />
         <br />
         <AnimatedNumber value={40} showPlus />
         <span className="stat-label">Mentors</span>

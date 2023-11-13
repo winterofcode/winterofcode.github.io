@@ -32,7 +32,7 @@ const Navbar = () => {
     };
   }, []);
   function changeBackground() {
-    if (window.scrollY >= 1000) {
+    if (window.scrollY >= 700) {
       setNavBackground(true);
     } else {
       setNavBackground(false);

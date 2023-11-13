@@ -6,25 +6,26 @@
   overflow: hidden;
   text-align: center;
   color: white;
+  width: calc(100% - 80px);
 }
 
 .header {
-  font-size: 50px;
+  font-size: 36px;
   color: #0f1842;
 }
 
 .description {
-  font-size: 24px;
+  font-size: 18px;
   text-align: center;
 }
 
 /* Responsive styles */
 @media (max-width: 768px) {
   .header {
-    font-size: 40px;
+    font-size: 24px;
   }
 
   .description {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
