@@ -1,4 +1,4 @@
-const faqData = {
+const footerData = {
     introToMl: `https://intro2ml.dscnsec.com/`,
     logoGenerator: `https://logo-generator.dscnsec.com/`,
     nsecGo: `https://go.dscnsec.com/`,
@@ -10,4 +10,4 @@ const faqData = {
     facebook: `https://www.facebook.com/dscnsec/`,
     youtube: `https://www.youtube.com/channel/UCKKrqXvTWZm0tULPxqv1NPg`,
 }
-export default faqData ;
+export default footerData ;
