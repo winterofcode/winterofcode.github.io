@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+}
+
+.statistics-container {
+  background-color: rgba(248, 142, 154, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .statistics-container {
+    flex-direction: row;
+  }
+}
+
+.statistics-box {
+  padding: 1.25rem;
+  padding-bottom: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+  animation: counter 2s ease-out; /* Adjust duration as needed */
+  color: #f3e79d;
+}
+
+/* MyComponent.css */
+
+.pi-buildings-icon {
+  color: #f3e79d;
+}
+.user-icon {
+  color: #f3e79d;
+}
+
+.mentor-icon {
+  color: #f3e79d;
+}
+
+@keyframes counter {
+  from {
+    content: "0";
+  }
+}
+
+.stat-label {
+  font-size: 1.5rem;
+  color: #f3e79d;
+}
