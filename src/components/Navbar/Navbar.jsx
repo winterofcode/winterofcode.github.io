@@ -5,19 +5,25 @@ import { RxCross2 } from "react-icons/rx";
 // @ts-ignore
 import logo from "../../assets/org-logo.png";
 import "./Navbar.scss";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
   const [navBackground, setNavBackground] = useState(false);
+  const location = useLocation();
+  console.log(location);
   useEffect(() => {
+    if (location.pathname !== "/") {
+      setNavBackground(true);
+      return;
+    }
     window.addEventListener("scroll", changeBackground);
 
     return () => {
       window.removeEventListener("scroll", changeBackground);
     };
-  }, []);
+  }, [location.pathname]);
 
   useEffect(() => {
     window.addEventListener("resize", changeSize);
