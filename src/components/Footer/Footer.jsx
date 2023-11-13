@@ -40,9 +40,6 @@ const Footer = () => {
               onClick={() => openInNewWindow(footerData.twitter)}
             />
           </div>
-          <div className="footer_logo_text2">
-            <p>Winter Of Code 2023</p>
-          </div>
         </div>
         <div className="footer_resources">
           <h1 className="footer_resources_heading">Resources</h1>

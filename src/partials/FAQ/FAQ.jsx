@@ -21,7 +21,7 @@ const FAQ = () => {
     };
   }, []);
   return (
-    <div className="faq">
+    <div className="faq" id="faq">
       <h1 className="head_faq">FAQs</h1>
       <ConfigProvider
         theme={{
