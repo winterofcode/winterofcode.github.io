@@ -45,7 +45,9 @@ const Navbar = () => {
 
         <div className="logo">
           <img className="logoImg" src={logo} alt="logo" />
-          <h1>Winter Of Code</h1>
+          <Link to="/">
+            <h1>Winter Of Code</h1>
+          </Link>
         </div>
         <NavMenu />
       </div>
@@ -81,10 +83,18 @@ function NavMenu({ isInline = false }) {
   const style = isInline ? mobileStyle : {};
   return (
     <ul className="menu" style={style}>
-      <li>GDSC NSEC</li>
-      <li>Team</li>
-      <li>Organization</li>
-      <li>FAQ</li>
+      <li>
+        <a href="https://dscnsec.com/">GDSC NSEC</a>
+      </li>
+      <li>
+        <Link to="/team">Team</Link>
+      </li>
+      <li>
+        <Link to="/#organization">Organization</Link>
+      </li>
+      <li>
+        <Link to="/#faq">FAQ</Link>
+      </li>
     </ul>
   );
 }
