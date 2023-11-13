@@ -6,9 +6,7 @@ const Cards = () => {
   return (
     <>
 
-    <Row gutter={16} className='row'>
-      <Col span={6}>
-        <Card className='displayCard' 
+<Card className='displayCard' 
             style={{
               width: 305.941,
               height: 300,
@@ -27,8 +25,6 @@ const Cards = () => {
             </Space>
           </div>
         </Card>
-      </Col>
-  </Row>
 
     </>
   )
