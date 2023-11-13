@@ -100,7 +100,7 @@ function NavMenu({ isInline = false, closeNavMenu = null }) {
   return (
     <ul className="menu" style={style}>
       <li>
-        <a href="https://dscnsec.com/">GDSC NSEC</a>
+        <a href="https://dscnsec.com/" target="_blank">GDSC NSEC</a>
       </li>
       <li onClick={closeNavMenu}>
         <Link to="/team">Team</Link>
