@@ -17,16 +17,15 @@ a {
   left: 0;
 }
 .active {
-  //   background: blue;
-  //   opacity: 90%;
-  //   filter: blur(100);
-  background: linear-gradient(
-    135deg,
-    rgba(8, 14, 44, 0.7),
-    rgba(37, 41, 88, 0.85)
-  );
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  // background: linear-gradient(
+  //   135deg,
+  //   rgba(8, 14, 44, 0.7),
+  //   rgba(37, 41, 88, 0.85)
+  // );
+  // backdrop-filter: blur(10px);
+  // -webkit-backdrop-filter: blur(10px);
+  background: #2d548b;
+
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
