@@ -16,7 +16,7 @@ const Footer = () => {
     window.open(url, "_blank");
   };
   return (
-    <div className="footer">
+    <div className="footer" >
       <div className="footer_top">
         <div className="footer_logo">
           <div className="footer_logo_first">

@@ -10,4 +10,4 @@ const faqData = {
     facebook: `https://www.facebook.com/dscnsec/`,
     youtube: `https://www.youtube.com/channel/UCKKrqXvTWZm0tULPxqv1NPg`,
 }
-export default faqData;
+export default faqData ;
