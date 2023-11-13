@@ -4,6 +4,7 @@ body {
   /* height: 100vh; */
   background: linear-gradient(180deg, #0e1742 0%, #2860c7 79.69%);
   color: white;
+  scroll-behavior: smooth;
 }
 
 * {

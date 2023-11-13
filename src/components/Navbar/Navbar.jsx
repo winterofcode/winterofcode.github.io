@@ -6,6 +6,7 @@ import { RxCross2 } from "react-icons/rx";
 import logo from "../../assets/org-logo.png";
 import "./Navbar.scss";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
@@ -93,10 +94,10 @@ function NavMenu({ isInline = false, closeNavMenu = null }) {
         <Link to="/team">Team</Link>
       </li>
       <li onClick={closeNavMenu}>
-        <Link to="/#organization">Organization</Link>
+        <HashLink to="/#organization">Organization</HashLink>
       </li>
       <li onClick={closeNavMenu}>
-        <Link to="/#faq">FAQ</Link>
+        <HashLink to="/#faq">FAQ</HashLink>
       </li>
     </ul>
   );
