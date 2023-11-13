@@ -2,7 +2,7 @@ import React from "react";
 import "./Apply.scss";
 
 const Apply = () => {
-  return <div>Apply</div>;
+  return <div id="organization">Apply</div>;
 };
 
 export default Apply;
