@@ -4,10 +4,8 @@ body {
   /* height: 100vh; */
   background: linear-gradient(180deg, #0e1742 0%, #2860c7 79.69%);
   color: white;
-  overflow-y: auto;
-  ::-webkit-scrollbar {
-    display: none
-    }
+  margin: 0;
+  padding: 0;
 }
 
 * {
