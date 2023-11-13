@@ -36,6 +36,9 @@ const Navbar = () => {
       setShowNav(false);
     }
   }
+  function closeNavMenu() {
+    setShowNav(false);
+  }
   return (
     <>
       <div className={navBackground ? "navbar active" : "navbar"}>
@@ -64,7 +67,7 @@ const Navbar = () => {
         open={showNav}
         onClose={() => setShowNav(false)}
       >
-        <NavMenu isInline={true} />
+        <NavMenu isInline={true} closeNavMenu={closeNavMenu} />
       </Drawer>
     </>
   );
@@ -73,7 +76,7 @@ const Navbar = () => {
 export default Navbar;
 
 // eslint-disable-next-line react/prop-types
-function NavMenu({ isInline = false }) {
+function NavMenu({ isInline = false, closeNavMenu = null }) {
   const mobileStyle = {
     listStyle: "none",
     flexDirection: "column",
@@ -86,13 +89,13 @@ function NavMenu({ isInline = false }) {
       <li>
         <a href="https://dscnsec.com/">GDSC NSEC</a>
       </li>
-      <li>
+      <li onClick={closeNavMenu}>
         <Link to="/team">Team</Link>
       </li>
-      <li>
+      <li onClick={closeNavMenu}>
         <Link to="/#organization">Organization</Link>
       </li>
-      <li>
+      <li onClick={closeNavMenu}>
         <Link to="/#faq">FAQ</Link>
       </li>
     </ul>
