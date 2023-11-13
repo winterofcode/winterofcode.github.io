@@ -57,7 +57,7 @@ const Navbar = () => {
         <NavMenu />
       </div>
       <Drawer
-        height={230}
+        height={250}
         closeIcon={false}
         placement="bottom"
         style={{
