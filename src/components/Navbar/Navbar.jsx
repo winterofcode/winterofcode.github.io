@@ -40,6 +40,7 @@ const Navbar = () => {
   function closeNavMenu() {
     setShowNav(false);
   }
+
   return (
     <>
       <div className={navBackground ? "navbar active" : "navbar"}>
@@ -49,9 +50,9 @@ const Navbar = () => {
 
         <div className="logo">
           <img className="logoImg" src={logo} alt="logo" />
-          <Link to="/">
+          <HashLink smooth to="/#top">
             <h1>Winter Of Code</h1>
-          </Link>
+          </HashLink>
         </div>
         <NavMenu />
       </div>
@@ -85,6 +86,11 @@ function NavMenu({ isInline = false, closeNavMenu = null }) {
     color: "#505050",
   };
   const style = isInline ? mobileStyle : {};
+  function scrollWithOffset(el) {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -90;
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
+  }
   return (
     <ul className="menu" style={style}>
       <li>
@@ -94,10 +100,23 @@ function NavMenu({ isInline = false, closeNavMenu = null }) {
         <Link to="/team">Team</Link>
       </li>
       <li onClick={closeNavMenu}>
-        <HashLink to="/#organization">Organization</HashLink>
+        <HashLink
+          smooth
+          to="/#organization"
+          scroll={(el) => scrollWithOffset(el)}
+        >
+          Organization
+        </HashLink>
       </li>
       <li onClick={closeNavMenu}>
-        <HashLink to="/#faq">FAQ</HashLink>
+        <HashLink smooth to="/#timeline" scroll={(el) => scrollWithOffset(el)}>
+          Timeline
+        </HashLink>
+      </li>
+      <li onClick={closeNavMenu}>
+        <HashLink smooth to="/#faq" scroll={(el) => scrollWithOffset(el)}>
+          FAQ
+        </HashLink>
       </li>
     </ul>
   );

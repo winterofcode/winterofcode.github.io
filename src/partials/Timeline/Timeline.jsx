@@ -11,7 +11,7 @@ import { timelineData } from "constants/timelineData";
 import { AiFillCaretDown } from "react-icons/ai";
 const Timeline = () => {
   return (
-    <div className="timeline">
+    <div id="timeline" className="timeline">
       <h1 className="title">Timeline</h1>
       <VerticalTimeline>
         {timelineData.map((el) => (
