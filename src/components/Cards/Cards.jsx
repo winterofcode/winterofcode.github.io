@@ -1,18 +1,19 @@
 import React from 'react'
+import "./Cards.scss"
 import { Card,Row,Col,Flex,Button,Space } from 'antd';
 // import woc from 'woc.png';
 const Cards = () => {
   return (
     <>
 
-    <Row gutter={16}>
-      <Col span={8}>
+    <Row gutter={16} className='row'>
+      <Col span={6}>
         <Card className='displayCard' 
             style={{
               width: 305.941,
               height: 300,
               borderRadius: 47,
-              opacity: 0.3,
+              opacity: 0.4,
               backgroundPosition: 'center',
               backgroundImage: "url(/woc.png)",
               backgroundSize: 'cover',
@@ -22,7 +23,7 @@ const Cards = () => {
         >
           <div className="space-align-block">
             <Space align="baseline">
-              <Button className='primary'>View Projects</Button>
+              <Button className='primary secondary'>View Projects</Button>
             </Space>
           </div>
         </Card>

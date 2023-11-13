@@ -5,7 +5,9 @@ import Cards from "components/Cards/Cards";
 const Projects = () => {
   return (
     <>
-      <Cards/>
+        <Cards/>
+      {/* <div className="container">
+      </div> */}
     </>
   )
 };
