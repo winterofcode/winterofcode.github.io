@@ -6,7 +6,7 @@ const Cards = () => {
   return (
     <>
 
-<Card className='displayCard' 
+        <Card className='displayCard' 
             style={{
               width: 305.941,
               height: 300,
