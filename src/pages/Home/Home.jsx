@@ -12,14 +12,14 @@ import FAQ from "partials/FAQ/FAQ.jsx";
 const Home = () => {
   return (
     <div>
-      <Apply />
-      {/* <Projects /> */}
-      {/* <LandingHome />
+      <LandingHome />
       <About />
       <Statistics />
       <SOM />
+      <Apply />
+      {/* <Projects /> */}
       <Timeline />
-      <FAQ /> */}
+      <FAQ />
     </div>
   );
 };
