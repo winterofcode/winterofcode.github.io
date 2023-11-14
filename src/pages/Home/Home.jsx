@@ -15,7 +15,7 @@ const Home = () => {
       <LandingHome />
       <About />
       <Statistics />
-      <SOM />
+      {/* <SOM /> */}
       <Apply />
       {/* <Projects /> */}
       <Timeline />

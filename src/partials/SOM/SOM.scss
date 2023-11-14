@@ -26,9 +26,11 @@
     flex-direction: column;
     background-color: #f3e79d;
     border-radius: 20px;
+    padding: 24px;
 
     @media (min-width: 48em) {
         flex-direction: row;
+        padding: 12px;
     }
 }
 
