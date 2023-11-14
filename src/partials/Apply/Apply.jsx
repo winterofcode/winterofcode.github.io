@@ -39,7 +39,7 @@ const Apply = () => {
         </div>
       </div>
     </>
-  );
+    )
 };
 
 export default Apply;

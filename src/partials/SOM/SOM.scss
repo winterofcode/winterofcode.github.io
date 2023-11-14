@@ -5,8 +5,6 @@
     text-align: center;
     color: black;
 
-
-
     .title {
         font-size: 3xl;
         font-weight: 600;
@@ -37,25 +35,25 @@
 }
 
 .cardSOM {
-    padding: 5px;
-    // margin: 7px;
-    margin-top: 0;
+    padding: 10px;
+    margin: 10px;
     background-color: #f3e79d;
     text-align: justify;
     border-radius: 20px;
 
-    .cardSOM-header {
+    .card-header {
         h2 {
             font-size: 3xl;
             font-weight: bold;
         }
     }
 
-    .cardSOM-image {
-        margin: auto;
+    .card-image {
+        width: 100%; 
+        margin: 10px 0; 
     }
 
-    .cardSOM-description {
+    .card-description {
         font-size: 16px;
     }
 }
