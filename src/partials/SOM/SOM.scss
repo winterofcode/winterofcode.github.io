@@ -1,22 +1,16 @@
-// Build.scss
-
-.build-container {
-    background-color: #012325;
-    color: white;
-}
-
 .content-container {
     border-radius: 20px;
     padding: 10px;
     margin: 10px;
-    text-align: justify;
-    color: #f3e79d;
-    background-color: #f3e79d;
+    text-align: center;
+    color: black;
+
+
 
     .title {
         font-size: 3xl;
         font-weight: 600;
-        color: black;
+        color: white;
     }
 
     .description {
@@ -24,38 +18,42 @@
     }
 }
 
-.card-container {
+.title-container {
+    text-align: center;
+    color: white;
+}
+
+.card-containerSOM {
     display: flex;
     flex-direction: column;
     background-color: #f3e79d;
+    border-radius: 20px;
 
     @media (min-width: 48em) {
         flex-direction: row;
     }
 }
 
-.card {
-    // max-width: 300px;
-    padding: 7px;
+.cardSOM {
+    padding: 5px;
     // margin: 7px;
     margin-top: 0;
-    text-align: justify;
     background-color: #f3e79d;
+    text-align: justify;
+    border-radius: 20px;
 
-    .card-header {
+    .cardSOM-header {
         h2 {
             font-size: 3xl;
             font-weight: bold;
-            color: black;
         }
     }
 
-    .card-image {
+    .cardSOM-image {
         margin: auto;
     }
 
-    .card-description {
+    .cardSOM-description {
         font-size: 16px;
-        color: black;
     }
 }
