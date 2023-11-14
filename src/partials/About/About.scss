@@ -1,12 +1,14 @@
 .main-container {
   background-color: #80bcf3;
-  margin: 20px;
+  // margin: 20px;
   border-radius: 24px;
   padding: 20px;
   overflow: hidden;
   text-align: center;
   color: white;
   width: calc(100% - 80px);
+  max-width: 800px; /* Set your desired max-width value */
+  margin: 20px auto;
 }
 
 .header {
