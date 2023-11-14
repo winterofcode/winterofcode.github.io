@@ -35,13 +35,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    gap: 15px;
     flex-flow: row wrap;
     padding: 0px 10px 50px 10px;
-    // @media screen and (min-width: 531px)and ( max-width:1000px) {
-        
-    // }
-    @media screen and (max-width: 530px) {
+    @media screen and (min-width: 607px)and ( max-width:816px) {
+        width: 80%;
+        margin: auto;
+        justify-content: space-around;
+    }
+    @media screen and (min-width: 818px)and ( max-width:1000px) {
+        width: 60%;
+        margin: auto;
+        justify-content: space-around;
+    }
+    @media screen and (max-width: 606px) {
         
         flex-flow: column wrap; 
     }
