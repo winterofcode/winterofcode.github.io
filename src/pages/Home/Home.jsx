@@ -12,8 +12,8 @@ import FAQ from "partials/FAQ/FAQ";
 const Home = () => {
   return (
     <div>
-      {/* <Apply /> */}
-      <Projects />
+      <Apply />
+      {/* <Projects /> */}
       {/* <LandingHome />
       <About />
       <Statistics />
