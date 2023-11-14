@@ -7,6 +7,7 @@
   color: white;
   padding: 24px 48px;
   width: calc(100vw - 96px);
+  margin-bottom: 36px;
 }
 .heading {
   color: #fffcfc;
@@ -40,12 +41,27 @@
     justify-content: center;
   }
 
-  @media screen and (max-width: 1030px) {
+  @media screen and (max-width: 1030px) and (min-width: 600px) {
     flex-direction: column;
     justify-content: flex-start;
 
     .btn_wrap1,
     .btn_wrap2 {
+      width: 100%;
+      Button {
+        width: 100%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .btn_wrap1,
+    .btn_wrap2 {
+      flex-direction: column;
+      gap: 12px;
       width: 100%;
       Button {
         width: 100%;
