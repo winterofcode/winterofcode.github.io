@@ -32,5 +32,17 @@
     margin: 40px;
 }
 .buttons{
-    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-flow: row wrap;
+    padding: 0px 10px 50px 10px;
+    // @media screen and (min-width: 531px)and ( max-width:1000px) {
+        
+    // }
+    @media screen and (max-width: 530px) {
+        
+        flex-flow: column wrap; 
+    }
 }

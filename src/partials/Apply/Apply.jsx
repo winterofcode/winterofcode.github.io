@@ -1,11 +1,11 @@
 import React from "react";
 import "./Apply.scss";
-import { Button, Flex, Segmented } from 'antd';
+import { Button, Flex } from 'antd';
 
-const boxStyle = {
-  width: '100%',
-  height: 120,
-};
+// const boxStyle = {
+//   width: '100%',
+//   height: 120,
+// };
 
 const Apply = () => {
 <<<<<<< HEAD
@@ -24,14 +24,12 @@ const Apply = () => {
           Check the Timeline section .Applications will open on the mentioned date.
         </div>
         <div className="buttons">
-        <Flex gap="large" align="start">
-        <Flex style={boxStyle} justify='space-around' align='center' wrap="wrap" className="ApplyButtons">
+        {/* <Flex gap="12px" style={boxStyle} wrap="wrap"> */}
           <Button type="primary" className="primary">Apply As Organisation</Button>
           <Button type="primary" className="primary">Apply As Community Partner</Button>
           <Button type="primary" className="primary">Apply As Mentor</Button>
           <Button type="primary" className="primary">Apply As Student</Button>
-        </Flex>
-        </Flex>
+        {/* </Flex> */}
         </div>
       </div>
     </>
