@@ -7,7 +7,7 @@ import SOM from "partials/SOM/SOM";
 import Apply from "partials/Apply/Apply";
 import Projects from "partials/Projects/Projects";
 import Timeline from "partials/Timeline/Timeline";
-import FAQ from "partials/FAQ/FAQ";
+import FAQ from "partials/FAQ/FAQ.jsx";
 
 const Home = () => {
   return (

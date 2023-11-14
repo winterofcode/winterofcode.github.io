@@ -1,0 +1,31 @@
+.main-container {
+  background-color: #80bcf3;
+  margin: 20px;
+  border-radius: 24px;
+  padding: 20px;
+  overflow: hidden;
+  text-align: center;
+  color: white;
+  width: calc(100% - 80px);
+}
+
+.header {
+  font-size: 36px;
+  color: #0f1842;
+}
+
+.description {
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .header {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+}
