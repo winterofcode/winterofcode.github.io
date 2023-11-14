@@ -1,16 +1,16 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
-
 .box{
-    // width: 100%;
-    // height: 477px;
     flex-shrink: 0;
     background: linear-gradient(180deg, rgba(15, 24, 66, 0.28) 14.5%, rgba(160, 238, 255, 0.40) 83.1%);
     color: white;
-    box-sizing: border-box;
-    
+    height: auto;
+    @media (max-width: 1030px) {
+        height: auto;
+    }
 }
 .heading{
     color: #FFFCFC;
@@ -31,8 +31,6 @@
     line-height: normal;
     margin: 40px;
 }
-.ApplyButton{
-    box-sizing: border-box;
-    margin: 30px;
-    padding: 30px;
+.buttons{
+    padding-bottom: 30px;
 }
