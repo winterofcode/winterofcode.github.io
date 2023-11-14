@@ -8,9 +8,6 @@ import { Button, Flex } from "antd";
 // };
 
 const Apply = () => {
-<<<<<<< HEAD
-  return <div id="organization">Apply</div>;
-=======
   return (
     <>
       <div className="box">
