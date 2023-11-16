@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Statistics.scss";
 
 import { PiUser } from "react-icons/pi";
@@ -39,26 +39,61 @@ const AnimatedNumber = ({ value, duration = 2000, showPlus = true }) => {
 };
 
 const Statistics = () => {
+  const statisticsRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  const handleIntersection = (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        setIsVisible(true);
+      }
+    });
+  };
+
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5, // Change this threshold as needed
+    };
+
+    const observer = new IntersectionObserver(handleIntersection, options);
+
+    if (statisticsRef.current) {
+      observer.observe(statisticsRef.current);
+    }
+
+    return () => {
+      if (statisticsRef.current) {
+        observer.unobserve(statisticsRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <div className="statistics-container">
-      <div className="statistics-box">
-        <PiUser className="user-icon" size={"36px"} />
-        <br />
-        <AnimatedNumber value={400} showPlus />
-        <span className="stat-label">Students</span>
-      </div>
-      <div className="statistics-box">
-        <PiBuildings className="pi-buildings-icon" size={"36px"} />
-        <br />
-        <AnimatedNumber value={10} showPlus />
-        <span className="stat-label">Organisations</span>
-      </div>
-      <div className="statistics-box">
-        <HiOutlineUserGroup className="mentor-icon" size={"36px"} />
-        <br />
-        <AnimatedNumber value={40} showPlus />
-        <span className="stat-label">Mentors</span>
-      </div>
+    <div className="statistics-container" ref={statisticsRef}>
+      {isVisible && (
+        <>
+          <div className="statistics-box">
+            <PiUser className="user-icon" size={"36px"} />
+            <br />
+            <AnimatedNumber value={400} showPlus />
+            <span className="stat-label">Students</span>
+          </div>
+          <div className="statistics-box">
+            <PiBuildings className="pi-buildings-icon" size={"36px"} />
+            <br />
+            <AnimatedNumber value={10} showPlus />
+            <span className="stat-label">Organizations</span>
+          </div>
+          <div className="statistics-box">
+            <HiOutlineUserGroup className="mentor-icon" size={"36px"} />
+            <br />
+            <AnimatedNumber value={40} showPlus />
+            <span className="stat-label">Mentors</span>
+          </div>
+        </>
+      )}
     </div>
   );
 };
