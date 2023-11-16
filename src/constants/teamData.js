@@ -46,6 +46,23 @@ export const teamData = [
     ],
   },
   {
+    name: "Sayandeep Adhikary",
+    title: "CP Lead",
+    image: sayandeep,
+    socials: [
+      {
+        url: "https://github.com/sayandeep-adhikary",
+        title: "GitHub",
+        icon: "https://img.icons8.com/3d-fluency/32/github.png",
+      },
+      {
+        url: "https://www.linkedin.com/in/sayandeep-adhikary/",
+        title: "LinkedIn",
+        icon: "https://img.icons8.com/color/32/linkedin.png",
+      },
+    ],
+  },
+  {
     name: "Sayan Mukherjee",
     title: "Web Team",
     image: Sayan,

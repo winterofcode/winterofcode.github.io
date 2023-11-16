@@ -291,7 +291,6 @@ const SocialMediaLinks = ({ socials }) => (
         <a href={item.url} target="_blank" rel="noopener noreferrer">
          <img src={item.icon}/>
         </a>
-        <p>{item.name}</p>
       </div>
     ))}
   </div>
@@ -305,7 +304,6 @@ const Card = ({ image, name,title, socials }) => (
         <h3 >{name}</h3>
         <h4 style={{color:"#ffffffef",fontSize:"20px"}}>{title}</h4>
         <SocialMediaLinks socials={socials} />
-       
       </div>
     </div>
   </div>
