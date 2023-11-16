@@ -12,7 +12,6 @@ const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
   const [navBackground, setNavBackground] = useState(false);
   const location = useLocation();
-  console.log(location);
   useEffect(() => {
     if (location.pathname !== "/") {
       setNavBackground(true);
@@ -45,6 +44,7 @@ const Navbar = () => {
   }
   function closeNavMenu() {
     setShowNav(false);
+    if (location.pathname !== "/") setNavBackground(false);
   }
 
   return (
@@ -56,14 +56,14 @@ const Navbar = () => {
 
         <div className="logo">
           <img className="logoImg" src={logo} alt="logo" />
-          <HashLink smooth to="/#top">
+          <HashLink smooth to="/#top" onClick={closeNavMenu}>
             <h1>Winter Of Code</h1>
           </HashLink>
         </div>
         <NavMenu />
       </div>
       <Drawer
-        height={250}
+        height={260}
         closeIcon={false}
         placement="bottom"
         style={{
@@ -100,7 +100,9 @@ function NavMenu({ isInline = false, closeNavMenu = null }) {
   return (
     <ul className="menu" style={style}>
       <li>
-        <a href="https://dscnsec.com/" target="_blank">GDSC NSEC</a>
+        <a href="https://dscnsec.com/" target="_blank" rel="noreferrer">
+          GDSC NSEC
+        </a>
       </li>
       <li onClick={closeNavMenu}>
         <Link to="/team">Team</Link>
