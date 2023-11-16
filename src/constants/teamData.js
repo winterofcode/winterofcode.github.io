@@ -1,7 +1,7 @@
 // @ts-nocheck
 import debojit from "assets/TeamData/Debojit.jpg";
 import Bipasha from "assets/TeamData/Bipasha.png";
-
+import Sayan from "assets/TeamData/Sayan.jpg"
 export const teamData = [
   {
     name: "Debojit Saha",
@@ -40,7 +40,29 @@ export const teamData = [
         title: "LinkedIn",
         icon: "https://img.icons8.com/color/32/linkedin.png",
       },
-      
+
+    ],
+  },
+  {
+    name: "Sayan Mukherjee",
+    title: "Web Team",
+    image: Sayan,
+    socials: [
+      {
+        url: "https://github.com/MYSELF-SAYAN/",
+        title: "GitHub",
+        icon: "https://img.icons8.com/3d-fluency/32/github.png",
+      },
+      {
+        url: "https://www.linkedin.com/in/sayan-mukherjee-898a47257/",
+        title: "LinkedIn",
+        icon: "https://img.icons8.com/color/32/linkedin.png",
+      },
+      {
+        url: "https://twitter.com/itz_sayan_03",
+        title: "Twitter",
+        icon: "https://img.icons8.com/nolan/32/twitterx.png",
+      },
     ],
   },
 ];
