@@ -2,7 +2,8 @@ import React from "react";
 import "./Footer.scss";
 import {
   InstagramOutlined,
-  FacebookOutlined,
+  LinkedinOutlined,
+  YoutubeOutlined,
   TwitterOutlined,
 } from "@ant-design/icons";
 // @ts-ignore
@@ -29,10 +30,14 @@ const Footer = () => {
               style={{ cursor: "pointer" }}
               onClick={() => openInNewWindow(footerData.instagram)}
             />
-            <FacebookOutlined
+            <LinkedinOutlined 
               className="footer_logo_socials_icons2"
               style={{ cursor: "pointer" }}
-              onClick={() => openInNewWindow(footerData.facebook)}
+              onClick={() => openInNewWindow(footerData.linkedin)}
+            />
+            <YoutubeOutlined className="footer_logo_socials_icons3"
+              style={{ cursor: "pointer" }}
+              onClick={() => openInNewWindow(footerData.youtube̦)}
             />
             <TwitterOutlined
               className="footer_logo_socials_icons3"

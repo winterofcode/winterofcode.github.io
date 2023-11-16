@@ -8,6 +8,7 @@ const footerData = {
     twitter: `https://twitter.com/dscnsec`,
     telegram: `https://t.me/dscnsec`,
     facebook: `https://www.facebook.com/dscnsec/`,
+    linkedin: `https://www.linkedin.com/company/dscnsec/`,
     youtube: `https://www.youtube.com/channel/UCKKrqXvTWZm0tULPxqv1NPg`,
 }
 export default footerData ;
