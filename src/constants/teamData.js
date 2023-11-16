@@ -1,6 +1,7 @@
 // @ts-nocheck
 import debojit from "assets/TeamData/Debojit.jpg";
 import Bipasha from "assets/TeamData/Bipasha.png";
+import sayandeep from 'assets/TeamData/Sayandeep.jpg'
 
 export const teamData = [
   {
@@ -40,7 +41,23 @@ export const teamData = [
         title: "LinkedIn",
         icon: "https://img.icons8.com/color/32/linkedin.png",
       },
-      
+    ],
+  },
+  {
+    name: "Sayandeep Adhikary",
+    title: "CP Lead",
+    image: sayandeep,
+    socials: [
+      {
+        url: "https://github.com/sayandeep-adhikary",
+        title: "GitHub",
+        icon: "https://img.icons8.com/3d-fluency/32/github.png",
+      },
+      {
+        url: "https://www.linkedin.com/in/sayandeep-adhikary/",
+        title: "LinkedIn",
+        icon: "https://img.icons8.com/color/32/linkedin.png",
+      },
     ],
   },
 ];
