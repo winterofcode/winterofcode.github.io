@@ -1,0 +1,129 @@
+.bg-image {
+  background-image: url("/LandingPageAssets/Background.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center bottom;
+  display: flex;
+  align-items: flex-end;
+  // position: absolute;
+  // overflow: hidden;
+}
+
+.mountain-container {
+  display: flex;
+  align-items: end;
+  width: 100%;
+  justify-content: space-between;
+  // overflow: hidden;
+}
+
+.mountain-1 {
+  z-index: 1;
+  position: relative;
+}
+
+.mountain-2 {
+  position: relative;
+  margin-left: -100%;
+  z-index: 2;
+}
+
+.mountain-1,
+.mountain-2 {
+  animation: mountainParallax 2s ease forwards;
+}
+
+.mountain-1 img,
+.mountain-2 img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.text-container {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  z-index: 3;
+  width: 100%;
+  animation: textParallax 3s ease-in-out forwards;
+}
+
+.mountain-1,
+.mountain-2,
+.text-container {
+  backface-visibility: hidden;
+}
+
+
+@keyframes textParallax {
+  0% {
+    top: 70%;
+    font-size: 30px;
+  }
+  50% {
+    top: 50%;
+    font-size: 80px;
+  }
+  100% {
+    top: 50%;
+    font-size: 80px;
+  }
+}
+
+@keyframes mountainParallax {
+  0% {
+    height: 65rem;
+  }
+  50% {
+    height: 55rem;
+  }
+  100% {
+    height: 35rem;
+  }
+}
+
+@media only screen and (max-width: 815px) {
+  .text-container p {
+    font-size: 60px;
+  }
+  .mountain-1 img,
+  .mountain-2 img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .text-container p {
+    font-size: 60px;
+  }
+  .mountain-1 img,
+  .mountain-2 img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .text-container p {
+    font-size: 40px;
+  }
+  .mountain-1 img,
+  .mountain-2 img {
+    object-fit: cover;
+    width: 100%;
+    height: 50%;
+    position: relative;
+    top: 50%;
+  }
+}
