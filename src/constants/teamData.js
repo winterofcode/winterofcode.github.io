@@ -2,7 +2,8 @@
 import debojit from "assets/TeamData/Debojit.jpg";
 import Bipasha from "assets/TeamData/Bipasha.png";
 import Sayan from "assets/TeamData/Sayan.jpg";
-import sayandeep from 'assets/TeamData/Sayandeep.jpg'
+import sayandeep from "assets/TeamData/Sayandeep.jpg";
+import SubhajitHait from "assets/TeamData/SubhajitHait.jpg";
 
 export const teamData = [
   {
@@ -42,7 +43,23 @@ export const teamData = [
         title: "LinkedIn",
         icon: "https://img.icons8.com/color/32/linkedin.png",
       },
-      
+    ],
+  },
+  {
+    name: "Subhajit Hait",
+    title: "App Lead",
+    image: SubhajitHait,
+    socials: [
+      {
+        url: "https://github.com/subho004",
+        title: "GitHub",
+        icon: "https://img.icons8.com/3d-fluency/32/github.png",
+      },
+      {
+        url: "http://www.linkedin.com/in/subho004",
+        title: "LinkedIn",
+        icon: "https://img.icons8.com/color/32/linkedin.png",
+      },
     ],
   },
   {
