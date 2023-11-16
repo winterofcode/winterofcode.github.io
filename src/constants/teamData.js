@@ -1,7 +1,8 @@
 // @ts-nocheck
 import debojit from "assets/TeamData/Debojit.jpg";
 import Bipasha from "assets/TeamData/Bipasha.png";
-import Sayan from "assets/TeamData/Sayan.jpg"import sayandeep from 'assets/TeamData/Sayandeep.jpg'
+import Sayan from "assets/TeamData/Sayan.jpg";
+import sayandeep from 'assets/TeamData/Sayandeep.jpg'
 
 export const teamData = [
   {
