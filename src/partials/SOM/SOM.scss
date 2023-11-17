@@ -1,82 +1,96 @@
 .content-container {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
-    overflow: hidden;
-    border-radius: 20px;
-    text-align: center;
-    color: black;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 24px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 20px;
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
 
-    .title {
-        font-size: 3xl;
-        font-weight: 600;
-        color: white;
+  .title {
+    font-size: 36px;
+    font-weight: 600;
+    color: white;
+    padding-bottom: 0;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 12px;
+
+    .title{
+        font-size: 28px;
     }
 
-    .description {
-        font-size: 20px;
+    .description{
+        font-size: 16px;
     }
+  }
 }
 
 .title-container {
-    text-align: center;
-    color: white;
-    max-width: 800px;
-    margin: 0 auto;
+  text-align: center;
+  color: white;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .card-containerSOM {
-    display: flex;
-    flex-direction: column;
-    background-color: #f3e79d;
-    border-radius: 20px;
-    padding: 24px;
-    max-width: 1200px;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #f3e79d;
+  border-radius: 20px;
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
 
-    @media (min-width: 48em) {
-        flex-direction: row;
-        justify-content: space-between;
-    }
+  @media (min-width: 48em) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .cardSOM {
-    flex: 1;
-    padding: 10px;
-    margin: 10px;
-    background-color: #f3e79d;
-    text-align: justify;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
+  flex: 1;
+  padding: 10px;
+  margin: 10px;
+  background-color: #f3e79d;
+  text-align: justify;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
 
-    .card-header {
-        h2 {
-            font-size: 3xl;
-            font-weight: bold;
-        }
+  .card-header {
+    h2 {
+      font-size: 3xl;
+      font-weight: bold;
     }
+  }
 
-    .card-image {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        margin: 10px 0;
-    }
+  .card-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 10px 0;
+  }
 
-    .card-image1 {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        margin: 10px 0;
-    
-        @media (min-width: 48em) {
-            order: 1;
-        }
-    }
+  .card-image1 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 10px 0;
 
-    .card-description {
-        font-size: 16px;
+    @media (min-width: 48em) {
+      order: 1;
     }
+  }
+
+  .card-description {
+    font-size: 16px;
+  }
 }

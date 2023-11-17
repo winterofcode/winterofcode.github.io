@@ -14,9 +14,9 @@ const Apply = () => {
         <div className="heading">Apply</div>
         <div className="discription">
           Start your journey with Winter Of Code & be a part of our Open Source
-          community
+          community.
           <br />
-          Check the Timeline section .Applications will open on the mentioned
+          Check the Timeline section. Applications will open on the mentioned
           date.
         </div>
         <div className="buttons">

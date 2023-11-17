@@ -7,27 +7,27 @@ import soham from "assets/TeamData/Soham.jpeg";
 import sambaran from "assets/TeamData/Sambaran.png";
 import atif from "assets/TeamData/Atif.jpeg";
 import nikhil from "assets/TeamData/Nikhil.jpeg";
+import subhajit from "assets/TeamData/Subhajit.jpeg";
+import soumi from "assets/TeamData/Soumi.jpeg";
+import saransh from "assets/TeamData/Saransh.jpeg";
+import momin from "assets/TeamData/Momin.jpeg";
+import souvik from "assets/TeamData/Souvik.jpeg";
 
 export const teamData = [
   {
-    name: "Debojit Saha",
-    title: "Web Lead",
-    image: debojit,
+    name: "Souvik Pal",
+    title: "GDSC Lead",
+    image: souvik,
     socials: [
       {
-        url: "https://github.com/debojitsaha/",
+        url: "https://github.com/SPal-14",
         title: "GitHub",
         icon: "https://img.icons8.com/3d-fluency/32/github.png",
       },
       {
-        url: "https://www.linkedin.com/in/debojit-saha/",
+        url: "https://www.linkedin.com/in/souvik-pal-7abbb7234/",
         title: "LinkedIn",
         icon: "https://img.icons8.com/color/32/linkedin.png",
-      },
-      {
-        url: "https://twitter.com/star_debojit",
-        title: "Twitter",
-        icon: "https://img.icons8.com/nolan/32/twitterx.png",
       },
     ],
   },
@@ -66,23 +66,6 @@ export const teamData = [
     ],
   },
   {
-    name: "Bipasha Roy",
-    title: "Web Team",
-    image: Bipasha,
-    socials: [
-      {
-        url: "https://github.com/beasroy",
-        title: "GitHub",
-        icon: "https://img.icons8.com/3d-fluency/32/github.png",
-      },
-      {
-        url: "https://www.linkedin.com/in/bipasha-roy-8a5414226/",
-        title: "LinkedIn",
-        icon: "https://img.icons8.com/color/32/linkedin.png",
-      },
-    ],
-  },
-  {
     name: "Sayandeep Adhikary",
     title: "CP Lead",
     image: sayandeep,
@@ -94,6 +77,62 @@ export const teamData = [
       },
       {
         url: "https://www.linkedin.com/in/sayandeep-adhikary/",
+        title: "LinkedIn",
+        icon: "https://img.icons8.com/color/32/linkedin.png",
+      },
+    ],
+  },
+  {
+    name: "Debojit Saha",
+    title: "Web Lead",
+    image: debojit,
+    socials: [
+      {
+        url: "https://github.com/debojitsaha/",
+        title: "GitHub",
+        icon: "https://img.icons8.com/3d-fluency/32/github.png",
+      },
+      {
+        url: "https://www.linkedin.com/in/debojit-saha/",
+        title: "LinkedIn",
+        icon: "https://img.icons8.com/color/32/linkedin.png",
+      },
+      {
+        url: "https://twitter.com/star_debojit",
+        title: "Twitter",
+        icon: "https://img.icons8.com/nolan/32/twitterx.png",
+      },
+    ],
+  },
+  {
+    name: "Subhajit Hait",
+    title: "App Lead",
+    image: subhajit,
+    socials: [
+      {
+        url: "https://github.com/subho004",
+        title: "GitHub",
+        icon: "https://img.icons8.com/3d-fluency/32/github.png",
+      },
+      {
+        url: "http://www.linkedin.com/in/subho004",
+        title: "LinkedIn",
+        icon: "https://img.icons8.com/color/32/linkedin.png",
+      },
+    ],
+  },
+  {
+    name: "Bipasha Roy",
+    title: "Web Team",
+    image: Bipasha,
+    socials: [
+      {
+        url: "https://github.com/beasroy",
+        title: "GitHub",
+        icon: "https://img.icons8.com/3d-fluency/32/github.png",
+      },
+      {
+        url: "https://www.linkedin.com/in/bipasha-roy-8a5414226/",
         title: "LinkedIn",
         icon: "https://img.icons8.com/color/32/linkedin.png",
       },
@@ -162,6 +201,67 @@ export const teamData = [
         url: "https://x.com/nikktwts",
         title: "Twitter",
         icon: "https://img.icons8.com/nolan/32/twitterx.png",
+      },
+    ],
+  },
+  {
+    name: "Soumi Guria",
+    title: "Web Team",
+    image: soumi,
+    socials: [
+      {
+        url: "https://github.com/soumiguria",
+        title: "GitHub",
+        icon: "https://img.icons8.com/3d-fluency/32/github.png",
+      },
+      {
+        url: "https://www.linkedin.com/in/soumi-guria-8882b224a/",
+        title: "LinkedIn",
+        icon: "https://img.icons8.com/color/32/linkedin.png",
+      },
+      {
+        url: "https://twitter.com/guria_soumi",
+        title: "Twitter",
+        icon: "https://img.icons8.com/nolan/32/twitterx.png",
+      },
+    ],
+  },
+  {
+    name: "S K Momin Ali",
+    title: "Web Team",
+    image: momin,
+    socials: [
+      {
+        url: "https://github.com/skmominali17",
+        title: "GitHub",
+        icon: "https://img.icons8.com/3d-fluency/32/github.png",
+      },
+      {
+        url: "https://www.linkedin.com/in/skmominali17?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        title: "LinkedIn",
+        icon: "https://img.icons8.com/color/32/linkedin.png",
+      },
+      {
+        url: "https://x.com/SKMOMINALI20?t=cvolKVCOFA33-O0axTU5Pg&s=09",
+        title: "Twitter",
+        icon: "https://img.icons8.com/nolan/32/twitterx.png",
+      },
+    ],
+  },
+  {
+    name: "Saransh Singh",
+    title: "Web Team",
+    image: saransh,
+    socials: [
+      {
+        url: "https://github.com/saranshsingh214",
+        title: "GitHub",
+        icon: "https://img.icons8.com/3d-fluency/32/github.png",
+      },
+      {
+        url: "https://www.linkedin.com/in/saransh-singh-31a15021b/",
+        title: "LinkedIn",
+        icon: "https://img.icons8.com/color/32/linkedin.png",
       },
     ],
   },
