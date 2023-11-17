@@ -13,9 +13,12 @@ const Navbar = () => {
   const [navBackground, setNavBackground] = useState(false);
   const location = useLocation();
   useEffect(() => {
+    window.scrollTo(0, 0);
     if (location.pathname !== "/") {
       setNavBackground(true);
       return;
+    } else {
+      setNavBackground(false);
     }
     window.addEventListener("scroll", changeBackground);
 
@@ -31,7 +34,7 @@ const Navbar = () => {
     };
   }, []);
   function changeBackground() {
-    if (window.scrollY >= 400) {
+    if (window.scrollY >= 290) {
       setNavBackground(true);
     } else {
       setNavBackground(false);
