@@ -1,7 +1,7 @@
 // @ts-nocheck
 import debojit from "assets/TeamData/Debojit.jpg";
 import Bipasha from "assets/TeamData/Bipasha.png";
-import Sayan from "assets/TeamData/Sayan.jpg";
+import Sayan from "assets/TeamData/Sayan.png";
 import sayandeep from "assets/TeamData/Sayandeep.jpg";
 import soham from "assets/TeamData/Soham.jpeg";
 import sambaran from "assets/TeamData/Sambaran.png";
