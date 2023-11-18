@@ -99,6 +99,11 @@ export const teamData = [
         title: "LinkedIn",
         icon: "https://img.icons8.com/color/32/linkedin.png",
       },
+      {
+        url: "https://twitter.com/03Chaberia",
+        title: "Twitter",
+        icon: "https://img.icons8.com/nolan/32/twitterx.png",
+      },
     ],
   },
   {
@@ -115,11 +120,6 @@ export const teamData = [
         url: "http://www.linkedin.com/in/subho004",
         title: "LinkedIn",
         icon: "https://img.icons8.com/color/32/linkedin.png",
-      },
-      {
-        url: "https://twitter.com/03Chaberia",
-        title: "Twitter",
-        icon: "https://img.icons8.com/nolan/32/twitterx.png",
       },
     ],
   },
