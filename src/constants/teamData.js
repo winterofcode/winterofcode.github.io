@@ -12,6 +12,8 @@ import soumi from "assets/TeamData/Soumi.jpeg";
 import saransh from "assets/TeamData/Saransh.jpeg";
 import momin from "assets/TeamData/Momin.jpeg";
 import souvik from "assets/TeamData/Souvik.jpeg";
+import yash from "assets/TeamData/Yash.jpeg";
+import siddharth from "assets/TeamData/Siddharth.jpeg";
 
 export const teamData = [
   {
@@ -83,6 +85,45 @@ export const teamData = [
     ],
   },
   {
+    name: "Siddharth Chaberia",
+    title: "Cloud Lead",
+    image: siddharth,
+    socials: [
+      {
+        url: "https://github.com/SiddharthChaberia",
+        title: "GitHub",
+        icon: "https://img.icons8.com/3d-fluency/32/github.png",
+      },
+      {
+        url: "https://www.linkedin.com/in/siddharth-chaberia",
+        title: "LinkedIn",
+        icon: "https://img.icons8.com/color/32/linkedin.png",
+      },
+    ],
+  },
+  {
+    name: "Subhajit Hait",
+    title: "App Lead",
+    image: subhajit,
+    socials: [
+      {
+        url: "https://github.com/subho004",
+        title: "GitHub",
+        icon: "https://img.icons8.com/3d-fluency/32/github.png",
+      },
+      {
+        url: "http://www.linkedin.com/in/subho004",
+        title: "LinkedIn",
+        icon: "https://img.icons8.com/color/32/linkedin.png",
+      },
+      {
+        url: "https://twitter.com/03Chaberia",
+        title: "Twitter",
+        icon: "https://img.icons8.com/nolan/32/twitterx.png",
+      },
+    ],
+  },
+  {
     name: "Debojit Saha",
     title: "Web Lead",
     image: debojit,
@@ -105,17 +146,12 @@ export const teamData = [
     ],
   },
   {
-    name: "Subhajit Hait",
-    title: "App Lead",
-    image: subhajit,
+    name: "Yash Shaw",
+    title: "PR Lead",
+    image: yash,
     socials: [
       {
-        url: "https://github.com/subho004",
-        title: "GitHub",
-        icon: "https://img.icons8.com/3d-fluency/32/github.png",
-      },
-      {
-        url: "http://www.linkedin.com/in/subho004",
+        url: "https://www.linkedin.com/in/yshaw2002?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         title: "LinkedIn",
         icon: "https://img.icons8.com/color/32/linkedin.png",
       },
