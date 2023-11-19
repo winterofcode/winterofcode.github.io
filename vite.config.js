@@ -4,7 +4,7 @@ import jsconfigPaths from "vite-jsconfig-paths";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/",
+  base: "/winterofcode.github.io/",
   build: {
     outDir: "build",
     sourcemap: false,
