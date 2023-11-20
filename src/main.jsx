@@ -30,7 +30,7 @@ const routes = [
 ];
 
 const router = createBrowserRouter(routes);
-
+//error in this file
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <App>
