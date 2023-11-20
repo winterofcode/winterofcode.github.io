@@ -46,12 +46,13 @@ a {
   color: white;
   list-style: none;
   display: flex;
+  overflow: hidden;
 }
-.menu li {
+.menu a {
   margin-left: 2em;
   cursor: pointer;
 }
-.navbar > .menu li a {
+.navbar > .menu a {
   color: white;
 }
 
@@ -59,10 +60,11 @@ a {
   .navbar {
     padding: 1.5rem 2rem;
   }
-  .menu li {
-    padding: 1em 0em;
+  .navbar > .menu {
+    display: none;
   }
-  .menu li a {
+  .menu a {
+    padding: 0.9em 0em;
     color: #505050;
   }
   .logoImg {
@@ -79,8 +81,5 @@ a {
     border-radius: 5px;
     padding: 0.5em;
     cursor: pointer;
-  }
-  .navbar > .menu {
-    display: none;
   }
 }
