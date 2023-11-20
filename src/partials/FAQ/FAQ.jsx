@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-// @ts-ignore
-import styles from "./FAQ.scss?inline";
+import "./FAQ.scss";
 
 import { CaretRightOutlined } from "@ant-design/icons";
 import { Collapse, Space } from "antd";
@@ -30,7 +29,7 @@ const FAQ = () => {
             Collapse: {
               headerPadding: "5px 10px",
               contentPadding: "2px 10px ",
-              fontSize: isSmallScreen ? "10px" : "16px", // fixed syntax error
+              fontSize: isSmallScreen ? "14px" : "16px", // fixed syntax error
             },
             Input: {
               colorPrimary: "#eb2f96",
@@ -42,7 +41,7 @@ const FAQ = () => {
         {faqData.map((item, index) => {
           return (
             <Collapse
-              className={styles.accordion_collapse}
+              className={"accordion_collapse"}
               expandIcon={({ isActive }) => (
                 <CaretRightOutlined
                   style={{
@@ -60,7 +59,7 @@ const FAQ = () => {
             >
               <Collapse.Panel header={item.label} key={item.key}>
                 <p
-                  className={styles.accordion_text}
+                  className={"accordion_text"}
                   style={{
                     padding: "0px",
                   }}
