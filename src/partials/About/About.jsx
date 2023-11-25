@@ -26,6 +26,14 @@ const About = () => {
         your formative years. Above all, we hope you get encouraged into the
         world of open source and develop more code for the benefit of all.
       </p>
+      <a
+        className="primary button"
+        target="_blank"
+        href="https://drive.google.com/file/d/17Tu1nqx1QqRqXSx2KHBnaiqolZ-sZuRB/view"
+        rel="noreferrer"
+      >
+        See our Brochure
+      </a>
     </div>
   );
 };

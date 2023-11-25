@@ -5,7 +5,7 @@ import { RxCross2 } from "react-icons/rx";
 // @ts-ignore
 import logo from "../../assets/org-logo.png";
 import "./Navbar.scss";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
