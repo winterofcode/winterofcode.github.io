@@ -34,23 +34,6 @@ export const teamData = [
     ],
   },
   {
-    name: "Soham Dey",
-    title: "Design Lead",
-    image: soham,
-    socials: [
-      {
-        url: "https://github.com/7sohamd/",
-        title: "GitHub",
-        icon: "https://img.icons8.com/3d-fluency/32/github.png",
-      },
-      {
-        url: "https://www.linkedin.com/in/soham-dey-891332256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-        title: "LinkedIn",
-        icon: "https://img.icons8.com/color/32/linkedin.png",
-      },
-    ],
-  },
-  {
     name: "Sambaran Das",
     title: "ML Lead",
     image: sambaran,
@@ -118,6 +101,23 @@ export const teamData = [
       },
       {
         url: "http://www.linkedin.com/in/subho004",
+        title: "LinkedIn",
+        icon: "https://img.icons8.com/color/32/linkedin.png",
+      },
+    ],
+  },
+  {
+    name: "Soham Dey",
+    title: "Design Lead",
+    image: soham,
+    socials: [
+      {
+        url: "https://github.com/7sohamd/",
+        title: "GitHub",
+        icon: "https://img.icons8.com/3d-fluency/32/github.png",
+      },
+      {
+        url: "https://www.linkedin.com/in/soham-dey-891332256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
         title: "LinkedIn",
         icon: "https://img.icons8.com/color/32/linkedin.png",
       },

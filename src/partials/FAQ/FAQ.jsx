@@ -29,7 +29,7 @@ const FAQ = () => {
             Collapse: {
               headerPadding: "5px 10px",
               contentPadding: "2px 10px ",
-              fontSize: isSmallScreen ? "14px" : "16px", // fixed syntax error
+              fontSize: isSmallScreen ? "16px" : "18px", // fixed syntax error
             },
             Input: {
               colorPrimary: "#eb2f96",

@@ -1,13 +1,12 @@
 import React from "react";
 import "./Apply.scss";
-import { Button, Flex, message } from "antd";
-
-// const boxStyle = {
-//   width: '100%',
-//   height: 120,
-// };
+import { Button, message } from "antd";
 
 const Apply = () => {
+  const openInNewWindow = (url) => {
+    window.open(url, "_blank");
+  };
+
   return (
     <>
       <div className="box" id="organization">
@@ -25,9 +24,7 @@ const Apply = () => {
               type="primary"
               className="primary"
               onClick={() =>
-                message.warning(
-                  "Applications for Organisations have not started yet."
-                )
+                openInNewWindow("https://forms.gle/wx1CKpzGCt6yXY6M7")
               }
             >
               Apply As Organisation
@@ -36,9 +33,7 @@ const Apply = () => {
               type="primary"
               className="primary"
               onClick={() =>
-                message.warning(
-                  "Applications for Community Partners have not started yet."
-                )
+                openInNewWindow("https://forms.gle/uY693jkYamRQ6bfv5")
               }
             >
               Apply As Community Partner
@@ -49,9 +44,7 @@ const Apply = () => {
               type="primary"
               className="primary"
               onClick={() =>
-                message.warning(
-                  "Applications for Mentors have not started yet."
-                )
+                openInNewWindow("https://forms.gle/VCjpHpUvyR6Abr2W9")
               }
             >
               Apply As Mentor
