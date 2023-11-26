@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom";
 import App from "./App.jsx";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
@@ -31,10 +31,11 @@ const routes = [
 
 const router = createBrowserRouter(routes);
 //error in this file
-ReactDOM.createRoot(document.getElementById("root")).render(
+ReactDOM.render(
   <React.StrictMode>
     <App>
       <RouterProvider router={router} />
     </App>
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById("root")
 );
