@@ -4,8 +4,8 @@ import {
   InstagramOutlined,
   LinkedinOutlined,
   YoutubeOutlined,
-  TwitterOutlined,
 } from "@ant-design/icons";
+import { FaXTwitter } from "react-icons/fa6";
 // @ts-ignore
 import wocLogo from "../../assets/wocLogo1.png";
 // @ts-ignore
@@ -39,7 +39,7 @@ const Footer = () => {
               style={{ cursor: "pointer" }}
               onClick={() => openInNewWindow(footerData.youtube̦)}
             />
-            <TwitterOutlined
+            <FaXTwitter
               className="footer_logo_socials_icons3"
               style={{ cursor: "pointer" }}
               onClick={() => openInNewWindow(footerData.twitter)}
