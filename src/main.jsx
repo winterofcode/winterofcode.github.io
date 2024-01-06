@@ -6,6 +6,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import NotFound404 from "utils/NotFound404/NotFound404.jsx";
 import Home from "pages/Home/Home.jsx";
 import Team from "pages/Team/Team.jsx";
+import Organisation from "pages/Organisation/Organisation.jsx";
 import MainLayout from "components/Layout/MainLayout.jsx";
 
 const routes = [
@@ -20,6 +21,10 @@ const routes = [
       {
         path: "/team",
         element: <Team />,
+      },
+      {
+        path: "/:id/projects",
+        element: <Organisation />,
       },
     ],
   },

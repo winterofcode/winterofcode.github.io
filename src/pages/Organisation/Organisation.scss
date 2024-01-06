@@ -1,0 +1,395 @@
+.Organisation {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 2rem;
+  margin-bottom: 50px;
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  &-project {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+
+    &-card {
+      background-color: white;
+      color: black;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      > div {
+        gap: 1rem;
+      }
+
+      &-mentor,
+      &-tech {
+        p {
+          margin: 0;
+        }
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+        
+      }
+
+      button {
+        background-color: #007bff;
+        color: white;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+
+      p {
+        font-size: 1rem;
+    
+      }
+
+      &-first {
+        display: flex;
+        flex-direction: row;
+      }
+
+      &-button {
+        display: flex;
+      }
+    }
+  }
+}
+.scroll-modal::-webkit-scrollbar {
+  width: 5px;
+}
+.scroll-modal::-webkit-scrollbar-track {
+  background: #a3b0bc;
+}
+.scroll-modal::-webkit-scrollbar-thumb {
+  background: #797fd4;
+}
+.scroll-modal::-webkit-scrollbar-thumb:hover {
+  background: #1120f0;
+}
+.Organisation-project-card-mentor {
+  margin-right: 5rem;
+  max-width: 50%;
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+  }
+}
+.Organisation-project-card-tech {
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+.Organisation-project-card-description {
+  h2 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
+.Organisation-project-card-button {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+  p {
+    margin-left: 1rem;
+    font-size: 1rem;
+    color: #3f49d8;
+    border-bottom: 1px solid #3f49d8;
+  }
+}
+.Organisation-project-card-first{
+  margin-bottom: 1rem;
+}
+.Modal {
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .Modal-first {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.5rem;
+  }
+  .Modal-mentor {
+    margin-right: 5rem;
+    max-width: 50%;
+    div{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+    }
+    h4 {
+      font-size: 1rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+  .Modal-tech {
+    max-width: 50%;
+    h4 {
+      font-size: 1.2rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+  .Modal-buttons {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    button {
+      background-color: #007bff;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+    p {
+      margin-left: 1rem;
+      font-size: 1rem;
+      color: #3f49d8;
+      border-bottom: 1px solid #3f49d8;
+    }
+  }
+}
+//add media query for tablet and mobile
+@media only screen and (max-width: 768px) {
+  .Organisation {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 2rem;
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      color: white;
+      margin-bottom: 1rem;
+    }
+
+    &-project {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+
+      &-card {
+        background-color: white;
+        color: black;
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        > div {
+          gap: 1rem;
+        }
+
+        &-mentor,
+        &-tech {
+          p {
+            margin: 0;
+          }
+        }
+
+        h2 {
+          font-size: 1.5rem;
+          margin-bottom: 0.5rem;
+        }
+
+        p {
+          font-size: 1rem;
+         
+        }
+
+        button {
+          background-color: #007bff;
+          color: white;
+          padding: 0.5rem 1rem;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+
+          &:hover {
+            background-color: #0056b3;
+          }
+        }
+
+        p {
+          font-size: 1rem;
+          margin-top: 1rem;
+        }
+
+        &-first {
+          display: flex;
+          flex-direction: row;
+        }
+
+        &-button {
+          display: flex;
+        }
+      }
+    }
+  }
+  .Organisation-project-card-first {
+    display: flex;
+    flex-direction: column;
+  }
+  .Organisation-project-card-mentor {
+    margin-right: 1.5rem;
+    h4 {
+      font-size: 1rem;
+    }
+  }
+  .Organisation-project-card-tech {
+    h4 {
+      font-size: 1rem;
+    }
+  }
+  .Organisation-project-card-description {
+    h2 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+  }
+  .Organisation-project-card-button {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    button {
+      background-color: #007bff;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+    p {
+      margin-left: 1rem;
+      font-size: 1rem;
+      color: #3f49d8;
+      border-bottom: 1px solid #3f49d8;
+    }
+  }
+  .Modal {
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .Modal-first {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1.5rem;
+    }
+    .Modal-mentor {
+      max-width: 100%;
+      h4 {
+        font-size: 1.2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+    .Modal-tech {
+      margin-top: 2rem;
+      max-width: 100%;
+      h4 {
+        font-size: 1.2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+    .Modal-buttons {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      button {
+        background-color: #007bff;
+        color: white;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+      p {
+        margin-left: 1rem;
+        font-size: 1rem;
+        color: #3f49d8;
+        border-bottom: 1px solid #3f49d8;
+      }
+    }
+  }
+}

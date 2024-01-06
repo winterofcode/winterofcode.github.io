@@ -1,20 +1,22 @@
 import React from "react";
 import "./Projects.scss";
-import Cards from "components/Cards/Cards";
-import projectData from "constants/projectData";
-// import Card from 
+import newProjectData from "constants/newProjectData";
+import ProjectCard from "components/ProjectCard/ProjectCard";
+import { RxPadding } from "react-icons/rx";
+
 const Projects = () => {
   return (
-    <>
-        <div className="container">
-        {projectData.map((projectData, index) =>
-            <div key={projectData.name + index}>
-              <Cards/>
-            </div>
-            )}
+    <div className="projects">
+      <div className="projects-container">
+        <h1>Projects</h1>
+        <div className="projects-card-conatiner">
+          {newProjectData.map((project, index) => (
+            <ProjectCard data={project} key={index} />
+          ))}
         </div>
-    </>
-  )
+      </div>
+    </div>
+  );
 };
 
 export default Projects;
