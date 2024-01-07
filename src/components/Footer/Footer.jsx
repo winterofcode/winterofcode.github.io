@@ -11,13 +11,14 @@ import wocLogo from "../../assets/wocLogo1.png";
 // @ts-ignore
 import gdscLogo from "../../assets/gdscLogo1.png";
 import footerData from "../../constants/footerData";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const openInNewWindow = (url) => {
     window.open(url, "_blank");
   };
   return (
-    <div className="footer" >
+    <div className="footer">
       <div className="footer_top">
         <div className="footer_logo">
           <div className="footer_logo_first">
@@ -30,12 +31,13 @@ const Footer = () => {
               style={{ cursor: "pointer" }}
               onClick={() => openInNewWindow(footerData.instagram)}
             />
-            <LinkedinOutlined 
+            <LinkedinOutlined
               className="footer_logo_socials_icons2"
               style={{ cursor: "pointer" }}
               onClick={() => openInNewWindow(footerData.linkedin)}
             />
-            <YoutubeOutlined className="footer_logo_socials_icons3"
+            <YoutubeOutlined
+              className="footer_logo_socials_icons3"
               style={{ cursor: "pointer" }}
               onClick={() => openInNewWindow(footerData.youtube̦)}
             />
@@ -44,6 +46,13 @@ const Footer = () => {
               style={{ cursor: "pointer" }}
               onClick={() => openInNewWindow(footerData.twitter)}
             />
+          </div>
+          <div className="footer_coc">
+            <Link to="/coc">Code of Conduct</Link>
+            <p className="footer_coc_email">Email us for more details</p>
+            <a href="mailto: dscnsecorg@gmail.com" className="email_2">
+              dscnsecorg@gmail.com
+            </a>
           </div>
         </div>
         <div className="footer_resources">
