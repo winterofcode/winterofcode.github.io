@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
@@ -8,7 +8,6 @@ import Home from "pages/Home/Home.jsx";
 import Team from "pages/Team/Team.jsx";
 import MainLayout from "components/Layout/MainLayout.jsx";
 import Coc from "pages/Coc/Coc.jsx";
-
 
 const routes = [
   {
@@ -25,8 +24,8 @@ const routes = [
       },
       {
         path: "/coc",
-        element:<Coc/>
-      }
+        element: <Coc />,
+      },
     ],
   },
   {
@@ -36,12 +35,11 @@ const routes = [
 ];
 
 const router = createBrowserRouter(routes);
-//error in this file
-ReactDOM.render(
+
+createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <App>
       <RouterProvider router={router} />
     </App>
-  </React.StrictMode>,
-  document.getElementById("root")
+  </React.StrictMode>
 );
