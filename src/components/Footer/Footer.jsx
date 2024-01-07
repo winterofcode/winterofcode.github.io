@@ -11,6 +11,7 @@ import wocLogo from "../../assets/wocLogo1.png";
 // @ts-ignore
 import gdscLogo from "../../assets/gdscLogo1.png";
 import footerData from "../../constants/footerData";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const openInNewWindow = (url) => {
@@ -44,6 +45,12 @@ const Footer = () => {
               style={{ cursor: "pointer" }}
               onClick={() => openInNewWindow(footerData.twitter)}
             />
+            
+          </div>
+          <div className="footer_coc">
+          <Link  to="/coc">Code of Conduct</Link>
+          <p className="footer_coc_email">Email us for more details</p>
+          <a href="mailto: dscnsecorg@gmail.com" className="email_2">dscnsecorg@gmail.com</a>
           </div>
         </div>
         <div className="footer_resources">
