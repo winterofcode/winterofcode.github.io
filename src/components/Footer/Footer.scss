@@ -193,7 +193,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
 }
 
 .footer_bottom img {
@@ -217,16 +216,15 @@
   margin-top: 20px;
 
   .footer_coc_email {
-    color: #DCF2F1;
+    color: #87a0f9;
     margin-top: 10px;
     margin-bottom: 10px;
   }
 
   .email_2 {
-   
-    
-      color: #DCF2F1;
-      text-transform: lowercase;
+    color: #ffffff;
+    text-transform: lowercase;
+    font-weight: 600;
   }
 
   @media screen and (max-width: 560px) {
