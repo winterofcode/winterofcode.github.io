@@ -8,6 +8,7 @@ import Apply from "partials/Apply/Apply";
 import Projects from "partials/Projects/Projects";
 import Timeline from "partials/Timeline/Timeline";
 import FAQ from "partials/FAQ/FAQ.jsx";
+import Community from "partials/Community/Community";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <About />
       <Statistics />
       <SOM />
+      <Community />
       <Apply />
       {/* <Projects /> */}
       <Timeline />
