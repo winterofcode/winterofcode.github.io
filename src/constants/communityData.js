@@ -1,32 +1,39 @@
+// @ts-nocheck
+import GDSCAliah from "assets/CommunityData/GDSC Aliah logo - Ankit Majee.png";
+import GDSCBBIT from "assets/CommunityData/Group 1 - GDSC BBIT.png";
+import ClueLess from "assets/CommunityData/clueless - Subho Ghosh.png";
+import GDSCKalyani from "assets/CommunityData/GDSC Logo chapter lockup centered template - Google Developer Student Clubs IIIT Kalyani.jpg";
+import ACM from "assets/CommunityData/acmlogo - Vineet.jpeg";
+import Devorld from "assets/CommunityData/20230207_171323_0000 - Harshavardhan Bajoria.png";
 export const community = [
   {
     name: "GDSC Aliah",
-    url: "/src/assets/CommunityData/GDSC Aliah logo - Ankit Majee.png",
+    url: GDSCAliah,
     link: "https://www.linkedin.com/company/gdsc-aliah/",
   },
   {
     name: "GDSC BBIT",
-    url: "/src/assets/CommunityData/Group 1 - GDSC BBIT.png",
+    url: GDSCBBIT,
     link: "",
   },
   {
     name: "ClueLess",
-    url: "/src/assets/CommunityData/clueless - Subho Ghosh.png",
+    url: ClueLess,
     link: "https://www.linkedin.com/company/79089507",
   },
   {
     name: "GDSC IIIT Kalyani",
-    url: "/src/assets/CommunityData/GDSC Logo chapter lockup centered template - Google Developer Student Clubs IIIT Kalyani.jpg",
+    url: GDSCKalyani,
     link: "https://www.linkedin.com/company/gdsc-iiit-kalyani/",
   },
   {
     name: "ACM SSCBS",
-    url: "/src/assets/CommunityData/acmlogo - Vineet.jpeg",
+    url: ACM,
     link: "https://www.linkedin.com/in/acm-sscbs/",
   },
   {
     name: "Devorld",
-    url: "/src/assets/CommunityData/20230207_171323_0000 - Harshavardhan Bajoria.png",
+    url: Devorld,
     link: "https://www.linkedin.com/company/devorld/",
   },
 ];
