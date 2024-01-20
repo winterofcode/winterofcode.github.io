@@ -2,7 +2,7 @@
 import GDSCAliah from "assets/CommunityData/GDSC Aliah logo - Ankit Majee.png";
 import GDSCBBIT from "assets/CommunityData/Group 1 - GDSC BBIT.png";
 import ClueLess from "assets/CommunityData/clueless - Subho Ghosh.png";
-import GDSCKalyani from "assets/CommunityData/GDSC Logo chapter lockup centered template - Google Developer Student Clubs IIIT Kalyani.jpg";
+import GDSCKalyani from "assets/CommunityData/GDSC IIIT Kalyani.png";
 import ACM from "assets/CommunityData/acmlogo - Vineet.jpeg";
 import Devorld from "assets/CommunityData/20230207_171323_0000 - Harshavardhan Bajoria.png";
 export const community = [
