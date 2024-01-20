@@ -1,9 +1,9 @@
 // @ts-nocheck
-import GDSCAliah from "assets/CommunityData/GDSC Aliah logo - Ankit Majee.png";
-import GDSCBBIT from "assets/CommunityData/Group 1 - GDSC BBIT.png";
-import ClueLess from "assets/CommunityData/clueless - Subho Ghosh.png";
+import GDSCAliah from "assets/CommunityData/GDSC Aliah logo.png";
+import GDSCBBIT from "assets/CommunityData/GDSC BBIT.png";
+import ClueLess from "assets/CommunityData/clueless.png";
 import GDSCKalyani from "assets/CommunityData/GDSC IIIT Kalyani.png";
-import ACM from "assets/CommunityData/acmlogo - Vineet.jpeg";
+import ACM from "assets/CommunityData/acmlogo.jpeg";
 import Devorld from "assets/CommunityData/20230207_171323_0000 - Harshavardhan Bajoria.png";
 export const community = [
   {
