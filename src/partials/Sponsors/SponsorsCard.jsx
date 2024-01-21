@@ -5,7 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 const SponsorsCard = ({ user }) => {
   return (
-    <div className="card">
+    <div className="sponsor-card" style={{backgroundColor: user.bgColor}}>
       <div className="circle">
         <img src={user.profileImage} alt={user.name} />
       </div>

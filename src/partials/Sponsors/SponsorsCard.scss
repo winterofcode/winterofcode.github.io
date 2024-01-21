@@ -1,7 +1,10 @@
-.card {
+.sponsor-card {
   position: relative;
   width: 200px;
   margin: 10px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 1px 3px 10px 4px rgba(0, 0, 0, 0.3882352941);
 }
 
 .circle {
@@ -36,11 +39,10 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  border-right: 1px solid white;
   transition: left 0.3s ease-in-out;
 }
 
-.card:hover .overlay {
+.sponsor-card:hover .overlay {
   left: 0;
 }
 

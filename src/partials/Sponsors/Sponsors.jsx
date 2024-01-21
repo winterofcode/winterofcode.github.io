@@ -1,5 +1,5 @@
 import React from "react";
-import Data from "./Data";
+import Data from "../../constants/SponsorData";
 import SponsorsCard from "./SponsorsCard";
 import "./Sponsors.scss";
 
