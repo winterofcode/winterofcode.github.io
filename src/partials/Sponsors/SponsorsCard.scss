@@ -6,7 +6,6 @@
   overflow: hidden;
   box-shadow: 1px 3px 10px 4px rgba(0, 0, 0, 0.3882352941);
 
-
   @media screen and (max-width: 450px) {
     width: 100% !important;
   }
@@ -54,6 +53,10 @@
 .name-container {
   margin: 10px;
   text-align: center;
+
+  @media screen and (max-width: 450px) {
+    font-size: 28px !important;
+  }
 }
 
 @media screen and (max-width: 440px) {
