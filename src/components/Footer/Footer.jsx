@@ -2,21 +2,23 @@ import React from "react";
 import "./Footer.scss";
 import {
   InstagramOutlined,
-  FacebookOutlined,
-  TwitterOutlined,
+  LinkedinOutlined,
+  YoutubeOutlined,
 } from "@ant-design/icons";
+import { FaXTwitter } from "react-icons/fa6";
 // @ts-ignore
 import wocLogo from "../../assets/wocLogo1.png";
 // @ts-ignore
 import gdscLogo from "../../assets/gdscLogo1.png";
 import footerData from "../../constants/footerData";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const openInNewWindow = (url) => {
     window.open(url, "_blank");
   };
   return (
-    <div className="footer" >
+    <div className="footer">
       <div className="footer_top">
         <div className="footer_logo">
           <div className="footer_logo_first">
@@ -29,16 +31,28 @@ const Footer = () => {
               style={{ cursor: "pointer" }}
               onClick={() => openInNewWindow(footerData.instagram)}
             />
-            <FacebookOutlined
+            <LinkedinOutlined
               className="footer_logo_socials_icons2"
               style={{ cursor: "pointer" }}
-              onClick={() => openInNewWindow(footerData.facebook)}
+              onClick={() => openInNewWindow(footerData.linkedin)}
             />
-            <TwitterOutlined
+            <YoutubeOutlined
+              className="footer_logo_socials_icons3"
+              style={{ cursor: "pointer" }}
+              onClick={() => openInNewWindow(footerData.youtube̦)}
+            />
+            <FaXTwitter
               className="footer_logo_socials_icons3"
               style={{ cursor: "pointer" }}
               onClick={() => openInNewWindow(footerData.twitter)}
             />
+          </div>
+          <div className="footer_coc">
+            <Link to="/coc">Code of Conduct</Link>
+            <p className="footer_coc_email">Email us for more details</p>
+            <a href="mailto: dscnsecorg@gmail.com" className="email_2">
+              dscnsecorg@gmail.com
+            </a>
           </div>
         </div>
         <div className="footer_resources">

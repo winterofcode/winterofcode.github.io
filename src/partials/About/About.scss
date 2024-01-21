@@ -1,24 +1,33 @@
 .main-container {
   background-color: #80bcf3;
-  // margin: 20px;
   border-radius: 24px;
-  padding: 20px;
+  padding: 28px 20px;
   overflow: hidden;
   text-align: center;
   color: white;
   width: calc(100% - 80px);
   max-width: 1200px; /* Set your desired max-width value */
-  margin: 20px auto;
+  margin: 36px auto;
 }
 
 .header {
   font-size: 36px;
+  font-weight: 600;
   color: #0f1842;
 }
 
 .description {
   font-size: 18px;
   text-align: center;
+}
+.button {
+  display: inline-block;
+  color: #fff;
+  padding: 10px 30px;
+  margin-top: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 10px;
 }
 
 /* Responsive styles */
@@ -29,5 +38,9 @@
 
   .description {
     font-size: 16px;
+  }
+  .button {
+    font-size: 15px;
+    padding: 10px 20px;
   }
 }

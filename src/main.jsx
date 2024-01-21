@@ -1,13 +1,14 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createHashRouter } from "react-router-dom";
 import NotFound404 from "utils/NotFound404/NotFound404.jsx";
 import Home from "pages/Home/Home.jsx";
 import Team from "pages/Team/Team.jsx";
 import Organisation from "pages/Organisation/Organisation.jsx";
 import MainLayout from "components/Layout/MainLayout.jsx";
+import Coc from "pages/Coc/Coc.jsx";
 
 const routes = [
   {
@@ -23,8 +24,8 @@ const routes = [
         element: <Team />,
       },
       {
-        path: "/:id/projects",
-        element: <Organisation />,
+        path: "/coc",
+        element: <Coc />,
       },
     ],
   },
@@ -34,12 +35,12 @@ const routes = [
   },
 ];
 
-const router = createBrowserRouter(routes);
+const router = createHashRouter(routes);
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <App>
-      <RouterProvider router={router} />
+      <RouterProvider router={router} fallbackElement={<p>Loading...</p>} />
     </App>
   </React.StrictMode>
 );

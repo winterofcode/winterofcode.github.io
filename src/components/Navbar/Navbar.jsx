@@ -5,7 +5,7 @@ import { RxCross2 } from "react-icons/rx";
 // @ts-ignore
 import logo from "../../assets/org-logo.png";
 import "./Navbar.scss";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
@@ -13,9 +13,12 @@ const Navbar = () => {
   const [navBackground, setNavBackground] = useState(false);
   const location = useLocation();
   useEffect(() => {
+    window.scrollTo(0, 0);
     if (location.pathname !== "/") {
       setNavBackground(true);
       return;
+    } else {
+      setNavBackground(false);
     }
     window.addEventListener("scroll", changeBackground);
 
@@ -31,7 +34,7 @@ const Navbar = () => {
     };
   }, []);
   function changeBackground() {
-    if (window.scrollY >= 400) {
+    if (window.scrollY >= 290) {
       setNavBackground(true);
     } else {
       setNavBackground(false);
@@ -44,7 +47,6 @@ const Navbar = () => {
   }
   function closeNavMenu() {
     setShowNav(false);
-    if (location.pathname !== "/") setNavBackground(false);
   }
 
   return (
@@ -71,6 +73,7 @@ const Navbar = () => {
           border: "none",
           borderRadius: "20px 20px 0px 0px",
           boxShadow: "15px 15px 15px 15px black",
+          overflow: "hidden",
         }}
         open={showNav}
         onClose={() => setShowNav(false)}
@@ -98,34 +101,48 @@ function NavMenu({ isInline = false, closeNavMenu = null }) {
     window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
   }
   return (
-    <ul className="menu" style={style}>
-      <li>
-        <a href="https://dscnsec.com/" target="_blank" rel="noreferrer">
-          GDSC NSEC
-        </a>
-      </li>
-      <li onClick={closeNavMenu}>
-        <Link to="/team">Team</Link>
-      </li>
-      <li onClick={closeNavMenu}>
-        <HashLink
-          smooth
-          to="/#organization"
-          scroll={(el) => scrollWithOffset(el)}
-        >
-          Organization
-        </HashLink>
-      </li>
-      <li onClick={closeNavMenu}>
-        <HashLink smooth to="/#timeline" scroll={(el) => scrollWithOffset(el)}>
-          Timeline
-        </HashLink>
-      </li>
-      <li onClick={closeNavMenu}>
-        <HashLink smooth to="/#faq" scroll={(el) => scrollWithOffset(el)}>
-          FAQ
-        </HashLink>
-      </li>
-    </ul>
+    <div className="menu" style={style}>
+      <a
+        href="https://dscnsec.com/"
+        target="_blank"
+        rel="noreferrer"
+        onClick={closeNavMenu}
+      >
+        GDSC NSEC
+      </a>
+      <HashLink
+        smooth
+        to="/team"
+        scroll={(el) => scrollWithOffset(el)}
+        onClick={closeNavMenu}
+      >
+        Team
+      </HashLink>
+      <HashLink
+        smooth
+        to="/#organization"
+        scroll={(el) => scrollWithOffset(el)}
+        onClick={closeNavMenu}
+      >
+        Organization
+      </HashLink>
+      <HashLink
+        smooth
+        to="/#timeline"
+        scroll={(el) => scrollWithOffset(el)}
+        onClick={closeNavMenu}
+      >
+        Timeline
+      </HashLink>
+
+      <HashLink
+        smooth
+        to="/#faq"
+        scroll={(el) => scrollWithOffset(el)}
+        onClick={closeNavMenu}
+      >
+        FAQ
+      </HashLink>
+    </div>
   );
 }

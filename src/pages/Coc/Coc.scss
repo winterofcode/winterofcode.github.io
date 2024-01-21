@@ -1,0 +1,76 @@
+section {
+  position: block;
+}
+
+.coc {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 4rem;
+  margin-top: 8rem;
+
+  .heading {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin: 4rem 0;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 20%;
+      border: 1px solid #fff;
+      bottom: -10px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  p {
+    font-family: var(--body-font);
+    word-wrap: break-word;
+    margin: 2rem 0;
+    font-weight: 200;
+  }
+
+  .text__bold {
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  .coc_list {
+    padding: 0;
+  }
+
+  li {
+    font-family: var(--body-font);
+    margin: 0 0 2rem;
+    word-wrap: break-word;
+
+    &::marker {
+      unicode-bidi: isolate;
+      font-variant-numeric: tabular-nums;
+      text-transform: none;
+      text-indent: 0px !important;
+      text-align: start !important;
+      text-align-last: start !important;
+    }
+
+    .emails {
+      margin-top: 10px;
+      margin-left: 30px;
+      padding: 0;
+
+      li {
+        margin-bottom: 2px;
+      }
+      a {
+        font-weight: 600;
+      }
+    }
+  }
+  a {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 600;
+  }
+}

@@ -14,6 +14,7 @@ a {
   margin: auto;
   top: 0;
   left: 0;
+  transition: background 0.3s ease-in-out;
 }
 .active {
   // background: linear-gradient(
@@ -25,9 +26,7 @@ a {
   // -webkit-backdrop-filter: blur(10px);
   background: rgb(45, 84, 139);
 
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.45);
 }
 .menuIcon {
   display: none;
@@ -47,12 +46,13 @@ a {
   color: white;
   list-style: none;
   display: flex;
+  overflow: hidden;
 }
-.menu li {
+.menu a {
   margin-left: 2em;
   cursor: pointer;
 }
-.navbar > .menu li a {
+.navbar > .menu a {
   color: white;
 }
 
@@ -60,10 +60,11 @@ a {
   .navbar {
     padding: 1.5rem 2rem;
   }
-  .menu li {
-    padding: 1em 0em;
+  .navbar > .menu {
+    display: none;
   }
-  .menu li a {
+  .menu a {
+    padding: 0.9em 0em;
     color: #505050;
   }
   .logoImg {
@@ -80,8 +81,5 @@ a {
     border-radius: 5px;
     padding: 0.5em;
     cursor: pointer;
-  }
-  .navbar > .menu {
-    display: none;
   }
 }
