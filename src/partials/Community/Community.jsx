@@ -1,8 +1,8 @@
 import React from "react";
 import "./Community.scss";
 import Marquee from "react-fast-marquee";
-
 import { community } from "constants/communityData";
+
 const Community = () => {
   return (
     <div className="scroll">

@@ -1,4 +1,4 @@
-const sponsorData = [
+export const sponsorData = [
   {
     id: 1,
     name: "GitHub",
@@ -27,5 +27,3 @@ const sponsorData = [
     bgColor: "#C0C0C0",
   },
 ];
-
-export default sponsorData;

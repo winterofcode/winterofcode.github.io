@@ -5,6 +5,7 @@ import ClueLess from "assets/CommunityData/clueless.png";
 import GDSCKalyani from "assets/CommunityData/GDSC IIIT Kalyani.png";
 import ACM from "assets/CommunityData/acmlogo.jpeg";
 import Devorld from "assets/CommunityData/20230207_171323_0000 - Harshavardhan Bajoria.png";
+
 export const community = [
   {
     name: "GDSC Aliah",
