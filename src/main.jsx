@@ -6,6 +6,7 @@ import { RouterProvider, createHashRouter } from "react-router-dom";
 import NotFound404 from "utils/NotFound404/NotFound404.jsx";
 import Home from "pages/Home/Home.jsx";
 import Team from "pages/Team/Team.jsx";
+import Organisation from "pages/Organisation/Organisation.jsx";
 import MainLayout from "components/Layout/MainLayout.jsx";
 import Coc from "pages/Coc/Coc.jsx";
 
@@ -26,6 +27,10 @@ const routes = [
         path: "/coc",
         element: <Coc />,
       },
+      {
+        path: "/:organisation/:projects",
+        element: <Organisation />,
+      }
     ],
   },
   {
