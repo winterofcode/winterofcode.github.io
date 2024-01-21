@@ -1,6 +1,6 @@
 import React from "react";
 import "./SponsorsCard.scss";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaGlobe } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
 const SponsorsCard = ({ user }) => {
@@ -18,7 +18,7 @@ const SponsorsCard = ({ user }) => {
             rel="noopener noreferrer"
             style={{ margin: "10px" }}
           >
-            <FaExternalLinkAlt style={{ fontSize: "25px" }} />
+            <FaGlobe style={{ fontSize: "30px" }} />
           </a>
           <a
             href={user.linkedInLink}
