@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import "./Organisation.scss";
-import { Modal,Tag } from "antd";
+import { Button, Modal, Tag } from "antd";
 import { Link } from "react-router-dom";
 const Organisation = () => {
   const location = useLocation();
@@ -30,13 +30,17 @@ const Organisation = () => {
         {cardData.projects.map((project) => (
           <div className="Organisation-project-card" key={project.id}>
             <div className="Organisation-project-card-first">
+              <div className="Organisation-project-card-student">
+                <h4>Students allowed</h4>
+                <p>{project.students}</p>
+              </div>
               <div className="Organisation-project-card-mentor">
                 <h4>Mentors</h4>
                 <div style={{ display: "flex", flexDirection: "row" }}>
                   {project.mentor.map((mentor, index) => (
                     <div key={mentor.id}>
-                      <p>
-                        {mentor}
+                      <p onClick={() => openInNewWindow(mentor.linkedin)}>
+                        {mentor.name}
                         {index < project.mentor.length - 1 && ", "}
                       </p>
                     </div>
@@ -45,15 +49,15 @@ const Organisation = () => {
               </div>
 
               <div className="Organisation-project-card-tech">
-             
-                <div style={{ display: "flex", flexDirection: "row",maxWidth:"600px",flexWrap:"wrap" }}>
+
+                <div style={{ display: "flex", flexDirection: "row", maxWidth: "600px", flexWrap: "wrap" }}>
                   {project.techStack.map((tech, index) => (
-                 
-                      <Tag color={colors[Math.floor(Math.random() * colors.length)]} style={{fontSize:"1rem",marginBottom:"5px"}}>
+
+                    <Tag color="#108ee9" style={{ fontSize: "1rem", marginBottom: "5px" }}>
                       {tech}
-                        {index < project.techStack.length - 1 && ", "}
-                      </Tag>
-                    
+
+                    </Tag>
+
                   ))}
                 </div>
               </div>
@@ -62,12 +66,12 @@ const Organisation = () => {
               <h2>{project.name}</h2>
               {project.description.length > 150 ? (
                 <p>
-                  {project.description.substring(0, 120)}{" "}
+                  {project.description.substring(0, 350)}{"... "}
                   <span
-                    style={{ color: "blue", cursor: "pointer" }}
+                    style={{ color: "white", cursor: "pointer", textDecoration: "underline" }}
                     onClick={() => openModal(project)}
                   >
-                    ...See More
+                    See More
                   </span>
                 </p>
               ) : (
@@ -75,11 +79,11 @@ const Organisation = () => {
               )}
             </div>
             <div className="Organisation-project-card-button">
-           
-                  {" "}
-                  <button onClick={() => openInNewWindow(project.codeLink)}>View Code</button>
-                
-              <p onClick={
+
+              {" "}
+              <button onClick={() => openInNewWindow(project.codeLink)}>View Code</button>
+
+              <p style={{ color: "white", paddingBottom: "3px", borderBottom: "1px solid white" , margin:"0"}} onClick={
                 () => openInNewWindow("https://forms.gle/aCnUEkymwxfqsAQm7")
               }>Apply now</p>
             </div>
@@ -99,13 +103,17 @@ const Organisation = () => {
             <h1>{selectedProject.name}</h1>
             <div>
               <div className="Modal-first">
+                <div className="Modal-Students">
+                  <h4>Students allowed</h4>
+                  <p>{selectedProject.students}</p>
+                </div>
                 <div className="Modal-mentor">
                   <h4>Mentors</h4>
                   <div style={{ display: "flex", flexDirection: "row" }}>
                     {selectedProject.mentor.map((mentor, index) => (
                       <div key={mentor.id}>
-                        <p>
-                          {mentor}
+                        <p onClick={() => openInNewWindow(mentor.linkedin)}>
+                          {mentor.name}
                           {index < selectedProject.mentor.length - 1 && ", "}
                         </p>
                       </div>
@@ -114,29 +122,29 @@ const Organisation = () => {
                 </div>
 
                 <div className="Modal-tech">
-                  
-                  <div style={{ display: "flex", flexDirection: "row",flexWrap:"wrap" }}>
+
+                  <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}>
                     {selectedProject.techStack.map((tech, index) => (
                       <div key={tech.id}>
                         <p>
-                        <Tag color={colors[Math.floor(Math.random() * colors.length)]} style={{fontSize:"1rem",marginBottom:"5px"}}>
-                      {tech}
-                        
-                      </Tag>
+                          <Tag color={colors[Math.floor(Math.random() * colors.length)]} style={{ fontSize: "1rem", marginBottom: "5px" }}>
+                            {tech}
+
+                          </Tag>
                         </p>
                       </div>
                     ))}
                   </div>
                 </div>
               </div>
-              <div className="scroll-modal" style={{overflowY:"auto",height:"400px"}}>
-              <p >{selectedProject.description}</p>
+              <div className="scroll-modal" style={{ overflowY: "auto", maxHeight: "400px" }}>
+                <p >{selectedProject.description}</p>
               </div>
-            
+
               <div className="Modal-buttons">
-              <button onClick={() => openInNewWindow(selectedProject.codeLink)}>View Code</button>
-                
-                <p onClick={
+                <button onClick={() => openInNewWindow(selectedProject.codeLink)}>View Code</button>
+
+                <p style={{ color: "#000000" }} onClick={
                   () => openInNewWindow("https://forms.gle/aCnUEkymwxfqsAQm7")
                 }>Apply now</p>
               </div>

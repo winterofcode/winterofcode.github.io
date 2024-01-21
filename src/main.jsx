@@ -27,6 +27,10 @@ const routes = [
         path: "/coc",
         element: <Coc />,
       },
+      {
+        path: "/:organisation/:projects",
+        element: <Organisation />,
+      }
     ],
   },
   {
