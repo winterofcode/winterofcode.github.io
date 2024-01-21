@@ -1,6 +1,6 @@
 import React from "react";
 import SponsorsCard from "./SponsorsCard";
-import { sponsorData } from "constants/sponsorData";
+import { sponsorData } from "../../constants/sponsorData";
 import "./Sponsors.scss";
 
 function Sponsors() {
