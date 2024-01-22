@@ -83,7 +83,7 @@ const Organisation = () => {
               {" "}
               <button onClick={() => openInNewWindow(project.codeLink)}>View Code</button>
 
-              <p style={{ color: "white", paddingBottom: "3px", borderBottom: "1px solid white" , margin:"0"}} onClick={
+              <p style={{ color: "white", paddingBottom: "3px", borderBottom: "1px solid white", margin: "0" }} onClick={
                 () => openInNewWindow("https://forms.gle/aCnUEkymwxfqsAQm7")
               }>Apply now</p>
             </div>

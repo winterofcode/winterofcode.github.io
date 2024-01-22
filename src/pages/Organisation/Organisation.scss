@@ -427,3 +427,18 @@
 .Organisation-project-card-mentor{
   min-width: 25%;
 }
+@media only screen and (max-width: 426px) {
+  .Organisation-project{
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  }
+}
+@media only screen and (max-width: 932px) and (min-width: 768px) {
+  .Organisation-project {
+    grid-template-columns: repeat(auto-fill, minmax(675px, 1fr));
+  }
+}
+@media only screen and (max-width: 630px) and (min-width: 427px) {
+  .Organisation-project {
+    grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
+  }
+}
