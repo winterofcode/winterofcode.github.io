@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-unused-vars
 import React from "react";
 import "./Timeline.scss";
 import { StarFull } from "assets/timelineIcons";
@@ -9,6 +8,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { timelineData } from "constants/timelineData";
 import { AiFillCaretDown } from "react-icons/ai";
+
 const Timeline = () => {
   return (
     <div id="timeline" className="timeline">

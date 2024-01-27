@@ -114,9 +114,7 @@ const Organisation = () => {
                   margin: "0",
                 }}
                 onClick={() =>
-                  message.warning(
-                    "Applications for this project has not started yet"
-                  )
+                  openInNewWindow("https://forms.gle/oemhBfWoGXdxtTNm8")
                 }
               >
                 Apply now
@@ -196,11 +194,9 @@ const Organisation = () => {
                 </button>
 
                 <p
-                  style={{ color: "#000000" }}
+                  style={{ color: "#000000", cursor: "pointer" }}
                   onClick={() =>
-                    message.warning(
-                      "Applications for this project has not started yet"
-                    )
+                    openInNewWindow("https://forms.gle/oemhBfWoGXdxtTNm8")
                   }
                 >
                   Apply now
