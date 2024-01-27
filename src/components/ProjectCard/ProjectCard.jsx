@@ -11,7 +11,7 @@ const ProjectCard = ({data}) => {
   }
   return (
     <div className='single-card-container'>
-      <img src={gdscLogo} alt="" />
+      <img src={data.imageUrl} alt="" />
       <div className='single-card-description'>
       <h2>{data.organization}</h2>
       <p>{data.noOfProjects} projects</p>
