@@ -5,10 +5,6 @@
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 1px 3px 10px 4px rgba(0, 0, 0, 0.3882352941);
-
-  @media screen and (max-width: 450px) {
-    width: 100% !important;
-  }
 }
 
 .circle {
@@ -59,14 +55,8 @@
   }
 }
 
-@media screen and (max-width: 440px) {
-    .card {
-        width: 180px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .card {
+@media screen and (max-width: 479px) {
+    .sponsor-card {
         width: 250px;
     }
 }
