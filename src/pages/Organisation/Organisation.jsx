@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import "./Organisation.scss";
-import { Button, Modal, Tag } from "antd";
-import { Link } from "react-router-dom";
+import { Modal, Tag, message } from "antd";
+
 const Organisation = () => {
   const location = useLocation();
   const cardData = location.state && location.state.cardData;
@@ -20,8 +20,20 @@ const Organisation = () => {
   };
   const openInNewWindow = (url) => {
     window.open(url, "_blank");
-  }
-  const colors = ["magenta", "red", "volcano", "orange", "gold", "lime", "green", "cyan", "blue", "geekblue", "purple"]
+  };
+  const colors = [
+    "magenta",
+    "red",
+    "volcano",
+    "orange",
+    "gold",
+    "lime",
+    "green",
+    "cyan",
+    "blue",
+    "geekblue",
+    "purple",
+  ];
   return (
     <div className="Organisation">
       <h1>{cardData.organization}</h1>
@@ -49,15 +61,21 @@ const Organisation = () => {
               </div>
 
               <div className="Organisation-project-card-tech">
-
-                <div style={{ display: "flex", flexDirection: "row", maxWidth: "600px", flexWrap: "wrap" }}>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    maxWidth: "600px",
+                    flexWrap: "wrap",
+                  }}
+                >
                   {project.techStack.map((tech, index) => (
-
-                    <Tag color="#108ee9" style={{ fontSize: "1rem", marginBottom: "5px" }}>
+                    <Tag
+                      color="#108ee9"
+                      style={{ fontSize: "1rem", marginBottom: "5px" }}
+                    >
                       {tech}
-
                     </Tag>
-
                   ))}
                 </div>
               </div>
@@ -66,9 +84,14 @@ const Organisation = () => {
               <h2>{project.name}</h2>
               {project.description.length > 150 ? (
                 <p>
-                  {project.description.substring(0, 350)}{"... "}
+                  {project.description.substring(0, 350)}
+                  {"... "}
                   <span
-                    style={{ color: "white", cursor: "pointer", textDecoration: "underline" }}
+                    style={{
+                      color: "white",
+                      cursor: "pointer",
+                      textDecoration: "underline",
+                    }}
                     onClick={() => openModal(project)}
                   >
                     See More
@@ -79,13 +102,25 @@ const Organisation = () => {
               )}
             </div>
             <div className="Organisation-project-card-button">
-
               {" "}
-              <button onClick={() => openInNewWindow(project.codeLink)}>View Code</button>
-
-              <p style={{ color: "white", paddingBottom: "3px", borderBottom: "1px solid white", margin: "0" }} onClick={
-                () => openInNewWindow("https://forms.gle/aCnUEkymwxfqsAQm7")
-              }>Apply now</p>
+              <button onClick={() => openInNewWindow(project.codeLink)}>
+                View Code
+              </button>
+              <p
+                style={{
+                  color: "white",
+                  paddingBottom: "3px",
+                  borderBottom: "1px solid white",
+                  margin: "0",
+                }}
+                onClick={() =>
+                  message.warning(
+                    "Applications for this project has not started yet"
+                  )
+                }
+              >
+                Apply now
+              </p>
             </div>
           </div>
         ))}
@@ -122,14 +157,23 @@ const Organisation = () => {
                 </div>
 
                 <div className="Modal-tech">
-
-                  <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      flexWrap: "wrap",
+                    }}
+                  >
                     {selectedProject.techStack.map((tech, index) => (
                       <div key={tech.id}>
                         <p>
-                          <Tag color={colors[Math.floor(Math.random() * colors.length)]} style={{ fontSize: "1rem", marginBottom: "5px" }}>
+                          <Tag
+                            color={
+                              colors[Math.floor(Math.random() * colors.length)]
+                            }
+                            style={{ fontSize: "1rem", marginBottom: "5px" }}
+                          >
                             {tech}
-
                           </Tag>
                         </p>
                       </div>
@@ -137,16 +181,30 @@ const Organisation = () => {
                   </div>
                 </div>
               </div>
-              <div className="scroll-modal" style={{ overflowY: "auto", maxHeight: "400px" }}>
-                <p >{selectedProject.description}</p>
+              <div
+                className="scroll-modal"
+                style={{ overflowY: "auto", maxHeight: "400px" }}
+              >
+                <p>{selectedProject.description}</p>
               </div>
 
               <div className="Modal-buttons">
-                <button onClick={() => openInNewWindow(selectedProject.codeLink)}>View Code</button>
+                <button
+                  onClick={() => openInNewWindow(selectedProject.codeLink)}
+                >
+                  View Code
+                </button>
 
-                <p style={{ color: "#000000" }} onClick={
-                  () => openInNewWindow("https://forms.gle/aCnUEkymwxfqsAQm7")
-                }>Apply now</p>
+                <p
+                  style={{ color: "#000000" }}
+                  onClick={() =>
+                    message.warning(
+                      "Applications for this project has not started yet"
+                    )
+                  }
+                >
+                  Apply now
+                </p>
               </div>
             </div>
           </div>

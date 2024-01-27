@@ -21,7 +21,7 @@ const Home = () => {
       <Sponsors />
       <Community />
       <Apply />
-     <Projects />
+      <Projects />
       <Timeline />
       <FAQ />
     </div>

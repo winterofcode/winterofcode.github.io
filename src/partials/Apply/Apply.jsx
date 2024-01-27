@@ -53,9 +53,7 @@ const Apply = () => {
               type="primary"
               className="primary"
               onClick={() =>
-                message.warning(
-                  "Applications for Students have not started yet."
-                )
+                openInNewWindow("https://forms.gle/oemhBfWoGXdxtTNm8")
               }
             >
               Apply As Student
