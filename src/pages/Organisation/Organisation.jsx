@@ -51,10 +51,11 @@ const Organisation = () => {
                 <div style={{ display: "flex", flexDirection: "row" }}>
                   {project.mentor.map((mentor, index) => (
                     <div key={mentor.id}>
-                      <p onClick={() => openInNewWindow(mentor.linkedin)}>
+                      <p onClick={mentor.linkedin ? () => openInNewWindow(mentor.linkedin) : undefined}>
                         {mentor.name}
                         {index < project.mentor.length - 1 && ", "}
                       </p>
+
                     </div>
                   ))}
                 </div>
@@ -145,7 +146,7 @@ const Organisation = () => {
                   <div style={{ display: "flex", flexDirection: "row" }}>
                     {selectedProject.mentor.map((mentor, index) => (
                       <div key={mentor.id}>
-                        <p onClick={() => openInNewWindow(mentor.linkedin)}>
+                        <p onClick={mentor.linkedin ? () => openInNewWindow(mentor.linkedin) : undefined}>
                           {mentor.name}
                           {index < selectedProject.mentor.length - 1 && ", "}
                         </p>

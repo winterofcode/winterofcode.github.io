@@ -260,6 +260,27 @@ const newProjectData = [
         ],
         noOfProjects: 1,
     },
+    {
+        organization: 'Subhankar mishra lab',
+        imageUrl: "https://firebasestorage.googleapis.com/v0/b/winterofcode-55d97.appspot.com/o/tirtha-logo-light.svg?alt=media&token=91567821-ade8-4f7b-bfdb-a578b7d83583",
+        projects: [
+            {
+                id: 1,
+                name: "Tirtha",
+                students: 1,
+                codeLink: "https://github.com/smlab-niser/tirtha-public/",
+                techStack: ["Computer Vision", "Python"],
+                description: `Project Tirtha is an academic initiative to create 3D models of heritage sites using crowdsourced images. The word Tirtha is Sanskrit for "a place of pilgrimage", and is commonly used to refer to the sacred sites of Hinduism. Our goal is to preserve and showcase the beauty and cultural significance of heritage sites. We believe that by allowing the general public to contribute to the creation of these models, and by providing open access to these models, we can increase awareness and appreciation of these important cultural landmarks and inspire future generations to maintain them for years to come.
+                `,
+                mentor: [{
+                    name: "Jyotirmaya Shivottam",
+                    linkedin: "",
+                },],
+            },
+
+        ],
+        noOfProjects: 1,
+    },
     
 
 
