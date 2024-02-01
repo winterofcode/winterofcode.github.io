@@ -336,7 +336,31 @@ const newProjectData = [
         ],
         noOfProjects: 4,
     },
+    {
+        organization: 'Cosaimosh',
+        imageUrl: "https://firebasestorage.googleapis.com/v0/b/twitter-x-clone-f142c.appspot.com/o/cosaimosh.png?alt=media&token=2e8db40d-667b-472d-a14c-3adf424bf6d8",
+        projects: [
+            {
+                id: 1,
+                name: "DataBot",
+                students: 5,
+                codeLink: "https://github.com/cos-ai-mosh/DataBot",
+                techStack: ["Typescript", "Next.js","Tailwind CSS","Vector DB","ML"],
+                description: `The project motto is to develop low latency chatbot applications for any kind of data available. The implementation should/must use free open source tools.
+                `,
+                mentor: [{
+                    name: "Piyush Thakur",
+                    linkedin: "https://www.linkedin.com/in/cosmo3769?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+                },
+                {
+                    name: "Ayush Thakur",
+                    linkedin: "https://www.linkedin.com/in/ayush-thakur-731914149?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+                },],
+            },
 
+        ],
+        noOfProjects: 1,
+    },
 
 
 
