@@ -353,8 +353,8 @@ const newProjectData = [
                     linkedin: "https://www.linkedin.com/in/cosmo3769?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
                 },
                 {
-                    name: "Ayush Thakur",
-                    linkedin: "https://www.linkedin.com/in/ayush-thakur-731914149?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+                    name: "Ayush Mishra",
+                    linkedin: "https://www.linkedin.com/in/ayush-mishra-62586b190?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
                 },],
             },
 
