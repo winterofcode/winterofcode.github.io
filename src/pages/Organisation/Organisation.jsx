@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import "./Organisation.scss";
 import { Modal, Tag, message } from "antd";
@@ -34,8 +34,9 @@ const Organisation = () => {
     "geekblue",
     "purple",
   ];
+  
   return (
-    <div className="Organisation">
+    <div className='Organisation'>
       <h1>{cardData.organization}</h1>
       <h3>{cardData.noOfProjects} projects</h3>
       <div className="Organisation-project">

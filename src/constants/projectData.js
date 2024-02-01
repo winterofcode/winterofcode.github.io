@@ -261,27 +261,82 @@ const newProjectData = [
         noOfProjects: 1,
     },
     {
-        organization: 'Subhankar mishra lab',
+        organization: 'Subhankar Mishra Lab',
         imageUrl: "https://firebasestorage.googleapis.com/v0/b/winterofcode-55d97.appspot.com/o/tirtha-logo-light.svg?alt=media&token=91567821-ade8-4f7b-bfdb-a578b7d83583",
         projects: [
             {
                 id: 1,
-                name: "Tirtha",
-                students: 1,
-                codeLink: "https://github.com/smlab-niser/tirtha-public/",
-                techStack: ["Computer Vision", "Python"],
-                description: `Project Tirtha is an academic initiative to create 3D models of heritage sites using crowdsourced images. The word Tirtha is Sanskrit for "a place of pilgrimage", and is commonly used to refer to the sacred sites of Hinduism. Our goal is to preserve and showcase the beauty and cultural significance of heritage sites. We believe that by allowing the general public to contribute to the creation of these models, and by providing open access to these models, we can increase awareness and appreciation of these important cultural landmarks and inspire future generations to maintain them for years to come.
+                name: " Idea 1:  Automatically generate mesh poster images and add automated testing for the process",
+                students: 4,
+                codeLink: "https://github.com/smlab-niser/tirtha-public/issues/14",
+                techStack: ["Javascript", "Python"],
+                description: `Description: The goal of this project is to automate the generation of the poster images (or previews) for the meshes, after the orientation of the mesh (for a pipeline run) is changed (manually). Currently, we use the JavaScript code mentioned in the linked GH issue to create preview images manually and attach them to the mesh. This project would automate this. A supplementary task is adding Python tests to ensure that the posters are produced and saved correctly.
+                Expected Outcome: By the end of this project, for each new mesh created using the Tirtha pipeline, the poster image should be automatically generated after the mesh orientation has been updated (manually). A (few) Python test(s) should also be added.
                 `,
                 mentor: [{
                     name: "Jyotirmaya Shivottam",
+                    linkedin: "",
+                }, {
+                    name: "Dr. Subhankar Mishra",
+                    linkedin: "",
+                },],
+            },
+            {
+                id: 2,
+                name: " Idea 2: Improve the UI/UX of the Tirtha frontend",
+                students: 4,
+                codeLink: "https://github.com/smlab-niser/tirtha-public/issues?q=is%3Aissue+is%3Aopen+label%3Afrontend",
+                techStack: ["Javascript", "Python","JQuery","HTML","CSS"],
+                description: `Description: This project aims to improve the UI / UX of the platform’s frontend. At the moment, we seek to overhaul the frontend aspects covered by the GitHub issues in the attached list (above). Some of these include: creation & addition of a dark theme with system-preference-based switching, more details on each run, such as contributor information, auto-update of poster images for each mesh to OpenGraph tags, etc. Based on the qualifications and interests of the candidate, we can work on further frontend improvements.
+                Expected Outcome: By the end of this project, most of the GH issues in the list should be resolved.
+                `,
+                mentor: [{
+                    name: "Jyotirmaya Shivottam",
+                    linkedin: "",
+                }, {
+                    name: "Dr. Subhankar Mishra",
+                    linkedin: "",
+                },],
+            },
+            {
+                id: 3,
+                name: " Idea 3: Implement a more private authentication flow",
+                students: 4,
+                codeLink: "https://github.com/smlab-niser/tirtha-public/issues/34",
+                techStack: ["Javascript", "Python"],
+                description: `Description: We currently use Sign in with Google to tag user contributions (sets of images of heritage sites) and to store a minimal amount of user information (name, email), to attribute them in accordance with the CC BY-NC-SA 4.0 license for user contributions. However, this presents a privacy risk, as Google’s code completely controls the Sign-in button and includes cross-site trackers. We would like to avoid this. One solution is to use a library based on an open authentication standard and to interact with Google Sign-In via web tokens. This will also allow us to support authentication using other social platforms.
+                Expected Outcome: The candidate is expected to assess possible approaches (e.g., Authlib) and implement the most appropriate one. By the end of this project, Tirtha should move away from Google Auth, and the privacy issue should be resolved.
+                `,
+                mentor: [{
+                    name: "Jyotirmaya Shivottam",
+                    linkedin: "",
+                }, {
+                    name: "Dr. Subhankar Mishra",
+                    linkedin: "",
+                },],
+            },
+            {
+                id: 4,
+                name: " Idea 4: Make image content-safety checks run on client-side",
+                students: 4,
+                codeLink: "https://github.com/smlab-niser/tirtha-public/issues/15",
+                techStack: ["JavaScript","Tensorflow","HTML","CSS", "Python"],
+                description: `Description: Currently, we check images submitted by users on the server-side using GantMan/nsfw_model. This should be offloaded to the client-side for two primary reasons: (i) user privacy and (ii) saving bandwidth. This project aims to leverage nsfwjs’s small neural network models written in TensorflowJS to check the images on the client-side.
+                Expected Outcome: By the end of this project, content safety checks should move to the client-side.
+                `,
+                mentor: [{
+                    name: "Jyotirmaya Shivottam",
+                    linkedin: "",
+                }, {
+                    name: "Dr. Subhankar Mishra",
                     linkedin: "",
                 },],
             },
 
         ],
-        noOfProjects: 1,
+        noOfProjects: 4,
     },
-    
+
 
 
 
