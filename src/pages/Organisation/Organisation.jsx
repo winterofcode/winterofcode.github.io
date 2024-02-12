@@ -116,7 +116,7 @@ const Organisation = () => {
                   margin: "0",
                 }}
                 onClick={() =>
-                  openInNewWindow("https://forms.gle/oemhBfWoGXdxtTNm8")
+                  openInNewWindow("https://forms.gle/byNwoCxiM4RDEuzX7")
                 }
               >
                 Apply now
@@ -198,7 +198,7 @@ const Organisation = () => {
                 <p
                   style={{ color: "#000000", cursor: "pointer" }}
                   onClick={() =>
-                    openInNewWindow("https://forms.gle/oemhBfWoGXdxtTNm8")
+                    openInNewWindow("https://forms.gle/byNwoCxiM4RDEuzX7")
                   }
                 >
                   Apply now
