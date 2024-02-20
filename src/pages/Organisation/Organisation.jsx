@@ -52,7 +52,7 @@ const Organisation = () => {
                 <div style={{ display: "flex", flexDirection: "row" }}>
                   {project.mentor.map((mentor, index) => (
                     <div key={mentor.id}>
-                      <p onClick={mentor.linkedin ? () => openInNewWindow(mentor.linkedin) : undefined}>
+                      <p onClick={mentor.linkedin ? () => openInNewWindow(mentor.linkedin) : undefined} >
                         {mentor.name}
                         {index < project.mentor.length - 1 && ", "}
                       </p>

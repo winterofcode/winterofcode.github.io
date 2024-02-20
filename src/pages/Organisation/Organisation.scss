@@ -48,7 +48,7 @@
           cursor: pointer;
           &:hover {
             color: #babac0;
-            border-bottom: 1px solid #babac0;
+           // border-bottom: 1px solid #babac0;
           }
         }
       }
@@ -107,7 +107,9 @@
     flex-wrap: wrap;
     margin: 0;
   }
-
+p{
+  text-decoration: underline;
+}
   
 }
 .Organisation-project-card-tech {
@@ -186,11 +188,12 @@
       font-size: 1.2rem;
       font-weight: 500;
       cursor: pointer;
+      text-decoration: underline;
     }
     &:hover {
       p{
         color: #78787e;
-      border-bottom: 1px solid #737376;
+      //border-bottom: 1px solid #737376;
       }
       
     }
@@ -321,6 +324,9 @@
     margin-right: 1.5rem;
     h4 {
       font-size: 1rem;
+    }
+    p{
+      text-decoration: underline;
     }
   }
   .Organisation-project-card-tech {
