@@ -80,7 +80,7 @@ const newProjectData = [
                 name: "GeoWellAdvisor",
                 students: 5,
                 codeLink: "https://github.com/047pegasus/GeoWellAdvisor",
-                techStack: ["Backend ", "DevOps"],
+                techStack: ["React ", "Vite","Flutter","Python","LeafletJS"],
                 description: `GeoWell Advisor is a powerful tool designed to help users determine the feasibility of digging a well at a specific location. Whether you are a farmer, a land developer, or simply someone interested in exploring groundwater resources, GeoWell Advisor provides you with essential information and insights to make informed decisions about well placement.
                 `,
                 mentor: [{
